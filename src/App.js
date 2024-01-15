@@ -2,7 +2,7 @@ import './App.css';
 import TeamCard from './TeamCard';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faInstagram, faTiktok} from '@fortawesome/free-brands-svg-icons';
+import {faInstagram, faTiktok, faSoundcloud} from '@fortawesome/free-brands-svg-icons';
 import shinoImg from './images/shino.jpg';
 import jasonImg from './images/jason.jpg';
 import matthewImg from './images/matthew.jpg';
@@ -27,6 +27,7 @@ function App() {
           <h3>follow our socials to stay up to date:</h3>
           <a className={loaded ? "socialIcon" : "socialIcon-unloaded"} href="https://www.instagram.com/forthealore/" ><FontAwesomeIcon icon={faInstagram}/></a>
           <a className={loaded ? "socialIcon" : "socialIcon-unloaded"} href="https://www.tiktok.com/@forthealore" ><FontAwesomeIcon size='xs' icon={faTiktok}/></a>
+          <a className={loaded ? "socialIcon" : "socialIcon-unloaded"} href="https://www.instagram.com/forthealore/" ><FontAwesomeIcon icon={faSoundcloud} size='xs'/></a>
         </div>
         <h3>meet the team:</h3>
         <div className='Team'>
