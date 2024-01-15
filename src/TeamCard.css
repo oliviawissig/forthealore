@@ -1,0 +1,64 @@
+a:hover{
+    color:#cd84df;   
+}
+
+.TeamCard{
+    display:grid;
+}
+
+.Team{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.TeamImg{
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 10px;
+    opacity:1;
+    transition: opacity 1s ease;
+}
+
+.TeamImg-unloaded{
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.hover-active{
+    grid-column: 1;
+    grid-row: 1;
+    z-index:99;
+    background-color: black;
+    opacity:0.87;
+    margin:0;
+    pointer-events: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+}
+
+.hover-inactive{
+    display:none;
+}
+
+.hover-text{
+    font-size: 20px;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .Team{
+        justify-content: center;
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .TeamImg{
+        width:100px;
+    }
+}

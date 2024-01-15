@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: conthrax;
+    src: url(conthrax-sb.otf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #cd84df;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::selection {
+    color: white;
+    background: #cd84df;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a{
+    color:white;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover{
+    color:mediumorchid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Overlay{
+    position: absolute;
+    background-attachment:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: #353839;
+    opacity: 0.4;
+    z-index: -999;
+    transition: opacity 1.5s ease;
+}
+
+.Overlay-unloaded{
+    position: absolute;
+    background-attachment:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    opacity: 1;
+    z-index: -999;
+    transition: opacity 1.5s ease;
+}
+
+.App{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: conthrax;
+    height:100vh;
+}
+
+.title{
+    font-style: italic;
+    font-size:80px;
+    margin-top:0;
+    margin-bottom: 0;
+    opacity:1;
+    line-height: 75px;
+
+    transition: all 1s ease;
+}
+
+.title-unloaded{
+    opacity:0;
+    font-size:80px;
+    font-style: italic;
+
+    transition: all 1s ease;
+}
+
+.Info{
+    background-color: black;
+    padding:40px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.socialIcon{
+    margin-right:20px;
+    font-size:40px;
+    opacity:1;
+    transition: opacity 1s ease;
+}
+
+.socialIcon-unloaded{
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url('./images/aloremobile.jpg');
+        background-attachment:fixed;
+        overflow:auto;
+    }
+    .Overlay{
+        position: fixed;
+        height:100%;
+    }
+
+    .Info{
+        padding:0;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        width:100vw;
+    }
+    .title{
+        width:85vw;
+        font-size:60px;
+    }
+    
+    .Socials{
+        width:85vw;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .Info, .title, .Socials{
+        width:90vw;
+    }
 }
