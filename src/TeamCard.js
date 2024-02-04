@@ -20,7 +20,7 @@ function TeamCard({ href, memberName, memberImg, className  }) {
                 <div className={hover}>
                     <p className='hover-text'>{memberName}</p>
                 </div>
-                <img src={memberImg} className={className} width={150} alt={"profile avatar of" + memberName} onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)} ></img>
+                <img src={memberImg} className={className} alt={"profile avatar of" + memberName} onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)} ></img>
             </div>
         </a>
      );

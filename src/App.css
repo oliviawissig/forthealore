@@ -2,26 +2,24 @@
     font-family: conthrax;
     src: url(conthrax-sb.otf);
 }
-
 ::-moz-selection { /* Code for Firefox */
     color: white;
     background: #cd84df;
 }
-
 ::selection {
     color: white;
     background: #cd84df;
 }
-
 a{
     color:white;
     text-decoration: none;
 }
-
+h3{
+    font-size: 2.1vh;
+}
 a:hover{
     color:mediumorchid;
 }
-
 .Overlay{
     position: absolute;
     background-attachment:fixed;
@@ -36,7 +34,6 @@ a:hover{
     transition: opacity 1.5s ease;
     -webkit-transition: opacity 1.5s;
 }
-
 .Overlay-unloaded{
     position: absolute;
     background-attachment:fixed;
@@ -51,7 +48,6 @@ a:hover{
     transition: opacity 1.5s ease;
     -webkit-transition: opacity 1.5s;
 }
-
 .App{
     color:white;
     display:flex;
@@ -62,10 +58,9 @@ a:hover{
     font-family: conthrax;
     height:100vh;
 }
-
 .title{
     font-style: italic;
-    font-size:80px;
+    font-size:8vh;
     margin-top:0;
     margin-bottom: 0;
     opacity:1;
@@ -74,16 +69,14 @@ a:hover{
     transition: opacity, margin 1s ease;
     -webkit-transition: opacity, margin 1s;
 }
-
 .title-unloaded{
     opacity:0;
-    font-size:80px;
+    font-size:8vh;
     font-style: italic;
 
     transition: opacity, margin 1s ease;
     -webkit-transition: opacity, margin 1s;
 }
-
 .Info{
     background-color: black;
     padding:40px;
@@ -91,23 +84,61 @@ a:hover{
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 10px;
+    width:37vw;
 }
-
+.Header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Socials{
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
 .socialIcon{
-    margin-right:20px;
-    font-size:40px;
+    margin-right:14px;
+    font-size:4vh;
     opacity:1;
     transition: opacity 1s ease;
     -webkit-transition: opacity 1s;
 }
-
 .socialIcon-unloaded{
     opacity:0;
     transition: opacity 1s ease;
     -webkit-transition: opacity 1s;
 }
+.iframe-container{
+    position: relative;
+    overflow:hidden;
+    width:100%;
+    padding-top: 56.25%;/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.iframe-responsive{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1355px) {
+    .Header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Socials{
+        justify-content: flex-start;
+    }
+    .Team{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     body{
         background-image: url('./images/aloremobile.jpg');
         background-attachment:fixed;
@@ -117,9 +148,10 @@ a:hover{
         position: fixed;
         height:100%;
     }
-
     .Info{
         padding:0;
+        margin-top:20px;
+        margin-bottom: 20px;
         background-color: transparent;
         justify-content: center;
         align-items: center;
@@ -127,16 +159,19 @@ a:hover{
     }
     .title{
         width:85vw;
-        font-size:60px;
+        font-size:8vh;
+        margin-bottom: 2vh;
     }
-    
-    .Socials{
+    h3, .Header{
         width:85vw;
+    }
+    h3{
+        text-align: left;
     }
 }
 
 @media only screen and (max-width: 300px) {
-    .Info, .title, .Socials{
-        width:90vw;
+    .Info, .title, .Socials, .Team{
+        width:100vw;
     }
 }
