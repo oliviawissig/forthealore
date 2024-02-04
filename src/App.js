@@ -2,7 +2,7 @@ import './App.css';
 import TeamCard from './TeamCard';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faInstagram, faTiktok, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import {faInstagram, faTiktok, faSoundcloud, faYoutube, faDiscord} from '@fortawesome/free-brands-svg-icons';
 import shinoImg from './images/shino.jpg';
 import jasonImg from './images/jason.jpg';
 import matthewImg from './images/matthew.jpg';
@@ -29,6 +29,7 @@ function App() {
             <a className={loaded ? "socialIcon" : "socialIcon-unloaded"} href="https://www.tiktok.com/@forthealore" ><FontAwesomeIcon size='xs' icon={faTiktok}/></a>
             <a className={loaded ? "socialIcon" : "socialIcon-unloaded"} href="https://on.soundcloud.com/9kooV" ><FontAwesomeIcon icon={faSoundcloud} size='xs'/></a>
             <a className={loaded ? "socialIcon" : "socialIcon-unloaded"} href="https://www.youtube.com/@forthealore" ><FontAwesomeIcon icon={faYoutube} size='xs'/></a>
+            <a className={loaded ? "socialIcon" : "socialIcon-unloaded"} href="https://discord.gg/HW2qtJvk8J" ><FontAwesomeIcon icon={faDiscord} size='xs'/></a>
           </div>
         </div>
         <h3>alore radio:</h3>
