@@ -16,11 +16,14 @@ function App() {
 
   useEffect( () => {
     setLoaded(true);
-  })
+  }, [])
 
   return (
     <div className="App">
       <div className={loaded ? "Overlay" : "Overlay-unloaded"}></div>
+      {/* <div className='Callout'>
+        <h3>alore live:</h3>
+      </div> */}
       <div className='Info'>
         <div className='Header'>
           <h1 className={loaded ? "title" : "title-unloaded"}>alore</h1>
