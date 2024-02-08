@@ -83,8 +83,33 @@ a:hover{
     border-radius: 10px;
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width:37vw;
+    max-height: 78vh;
+    overflow: auto;
+
+    scrollbar-color: white transparent;
+    scrollbar-width:auto;
+}
+/* width */
+.Info::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Track */
+.Info::-webkit-scrollbar-track {
+background: transparent;
+}
+
+/* Handle */
+.Info::-webkit-scrollbar-thumb {
+background: white;
+border-radius: 10px;
+}
+
+/* Handle on hover */
+.Info::-webkit-scrollbar-thumb:hover {
+background: #555;
 }
 .Header{
     display:flex;
@@ -104,6 +129,9 @@ a:hover{
     transition: opacity 1s ease;
     -webkit-transition: opacity 1s;
 }
+.socialIcon:hover{
+    color: #cd84df;
+}
 .socialIcon-unloaded{
     opacity:0;
     transition: opacity 1s ease;
@@ -114,6 +142,7 @@ a:hover{
     overflow:hidden;
     width:100%;
     padding-top: 56.25%;/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    border-radius: 10px;
 }
 .iframe-responsive{
     position: absolute;
@@ -124,19 +153,59 @@ a:hover{
     width:100%;
     height:100%;
 }
-
-.Callout{
-    position:absolute;
-    top:0;
-    left:0;
-    margin:40px;
-    background-color: black;
-    padding:20px;
+.Promo{
+    width:100%;
+    grid-column: 1;
+    grid-row: 1;
+    width:100%;
     border-radius: 10px;
-    width:10vw;
+    opacity:1;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s;
 }
 
-@media only screen and (max-width: 1355px) {
+#promo.hover-active{
+    grid-column: 1;
+    grid-row: 1;
+    z-index:99;
+    background-color: black;
+    opacity:0.87;
+    margin:0;
+    pointer-events: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    opacity:0.8;
+
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s;
+}
+#promo.hover-inactive {
+    grid-column: 1;
+    grid-row: 1;
+    z-index:99;
+    background-color: black;
+    opacity:0.87;
+    margin:0;
+    pointer-events: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    opacity:0;
+
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s;
+}
+#promo > .hover-text{
+    font-size:3rem;
+}
+.no-desktop{
+    display:none;
+}
+
+@media only screen and (max-width: 1475px) {
     .Header{
         flex-direction: column;
         align-items: flex-start;
@@ -153,7 +222,12 @@ a:hover{
     body{
         background-image: url('./images/aloremobile.jpg');
         background-attachment:fixed;
-        overflow:auto;
+        overflow:scroll;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .App{
+        height:100%;
     }
     .Overlay{
         position: fixed;
@@ -161,12 +235,15 @@ a:hover{
     }
     .Info{
         padding:0;
-        margin-top:20px;
-        margin-bottom: 20px;
         background-color: transparent;
         justify-content: center;
         align-items: center;
-        width:100vw;
+        width:100%;
+        max-height: unset;
+        margin-top:3vh;
+
+        overflow-y:scroll;
+        overflow-x:hidden;
     }
     .title{
         width:85vw;
@@ -178,6 +255,34 @@ a:hover{
     }
     h3{
         text-align: left;
+    }
+    .iframe-container, .Promo{
+        border-radius: 0;
+    }
+    .promo-container{
+        
+    }
+    #promo.hover-active{
+        display:none;
+    }
+    #promo.hover-inactive{
+        display:none;
+    }
+    .no-desktop{
+        display:block;
+    }
+    .mobile-btn-container{
+        margin:30px 0px 20px 0px;
+        display:flex;
+        justify-content: flex-start;
+        width:85vw;
+    }
+    .mobile-btn{
+        background-color: white;
+        color: black;
+        padding:16px 25px;
+        border-radius: 10px;
+        font-size:1.2rem;
     }
 }
 

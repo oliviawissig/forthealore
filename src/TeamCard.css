@@ -1,18 +1,15 @@
 a:hover{
-    color:#cd84df;   
+    color:white;   
 }
-
 .TeamCard{
     display:grid;
 }
-
 .Team{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .TeamImg{
     grid-column: 1;
     grid-row: 1;
@@ -22,13 +19,11 @@ a:hover{
     transition: opacity 1s ease;
     -webkit-transition: opacity 1s;
 }
-
 .TeamImg-unloaded{
     opacity:0;
     transition: opacity 1s ease;
     -webkit-transition: opacity 1s;
 }
-
 .hover-active{
     grid-column: 1;
     grid-row: 1;
@@ -43,10 +38,9 @@ a:hover{
     width:125px;
     opacity:0.8;
 
-    transition: opacity 0.5s ease;
-    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s;
 }
-
 .hover-inactive{
     grid-column: 1;
     grid-row: 1;
@@ -61,13 +55,13 @@ a:hover{
     width:125px;
     opacity:0;
 
-    transition: opacity 0.5s ease;
-    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s;
 }
-
 .hover-text{
-    font-size: 20px;
+    font-size: 0.95rem;
     text-align: center;
+    padding:10px;
 }
 
 @media only screen and (max-width: 1355px) {
@@ -86,15 +80,16 @@ a:hover{
     .Team{
         row-gap:10px;
         width:90vw;
+        margin-bottom: 5vh;
     }
     .TeamImg{
         width:150px;
     }
     .hover-active{
-        width:150px;
+        display:none;
     }
     .hover-inactive{
-        width:150px;
+        display:none;
     }
 }
 
