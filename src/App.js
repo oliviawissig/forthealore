@@ -63,7 +63,7 @@ function App() {
         </div>
         <h3>alore radio:</h3>
         <div className='iframe-container'>
-          <iframe className='iframe-responsive' width="560" height="315" src="https://www.youtube.com/embed/dTe7DXHlFGk?si=CHAzDPoFBbjV4Vbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe className='iframe-responsive' width="560" height="315" src="https://www.youtube.com/embed/RqNUw53sT8s?si=Yxqip7xHtXGI1pG5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <h3>meet the team:</h3>
         <div className='Team'>
