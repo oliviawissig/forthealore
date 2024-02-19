@@ -1,17 +1,26 @@
-# For the [ALORE]
+# [ALORE]
+[forthealore.com](https://forthealore.com/)
 
 ### Overview
 A landing page for all things ALORE. This originally sarted as a personal projects for my friends' side business, and led to the team using my site and domain. The website spotlights new events, releases, merchandise (coming soon...), and ALORE team members. 
 
-A major attribute I focused on while creating this site was the loading animations and transitions. I am more streamlined when it comes to my project structure and components, which allowed me to implement loading animations and hover effects. The next iteration of the site will receive a much needed face lift, as well as functional improvements overall. A future goal is to include a shop page for merchandise and event tickets. 
+A major attribute I focused on while creating this site was the loading animations and transitions. I am more streamlined when it comes to my project structure and components, which allowed me to implement loading animations and hover effects much easier. The next iteration of the site will receive a much needed face lift, as well as functional improvements overall. A future goal is to include a shop page for merchandise and event tickets. 
 
-![](https://i.imgur.com/WiTYFPG.png)
+<span align="center">
+  <img src="https://i.imgur.com/WiTYFPG.png" alt="" width="670"/>
+  <img src="https://i.imgur.com/aqt24jv.png" alt="" width="200"/>
+</span>
 
 ### Built With
 React, CSS, JavaScript
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
 
-## Features
+### Features
+- Built from scratch with `create-react-app`
+- I ❤️ Flexbox 
+- Uses React hooks and `useEffect()` to handle loading and hover animations
+- Supports multiple environments with a fully responsive design. Proper formatting should be exepcted with mobile, desktop, and tablet devices.
+- Hosted with Squarespace and Github Pages. 
 
 <!-- TODO: List what specific 'user problems' that this application solves. -->
 
