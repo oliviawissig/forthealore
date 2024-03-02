@@ -27,7 +27,7 @@ export const Form = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='contact-form' id='contact-form'>
+    <form method="post" ref={form} onSubmit={sendEmail} className='contact-form' id='contact-form'>
       <label htmlFor='user_name' className='input-label'>Name<span className='required'>*</span></label>
       <input type="text" id="user_name" name="user_name" className='input' required placeholder='Your name'/>
 
