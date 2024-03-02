@@ -1,52 +1,30 @@
 @font-face {
-    font-family: conthrax;
-    src: url(conthrax-sb.otf);
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt,wght.ttf);
+    font-weight: 100 1000;
 }
 ::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: #cd84df;
+    /* color: white;
+    background: #13c502; */
 }
 ::selection {
-    color: white;
-    background: #cd84df;
+    /* color: white;
+    background: #13c502; */
 }
 a{
     color:white;
     text-decoration: none;
 }
 h3{
-    font-size: 2.1vh;
+    font-size: 2.7vh;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+img{
+    height:100%;
 }
 a:hover{
-    color:mediumorchid;
-}
-.Overlay{
-    position: absolute;
-    background-attachment:fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    background-color: #353839;
-    opacity: 0.4;
-    z-index: -999;
-
-    transition: opacity 1.5s ease;
-    -webkit-transition: opacity 1.5s;
-}
-.Overlay-unloaded{
-    position: absolute;
-    background-attachment:fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    background-color: black;
-    opacity: 1;
-    z-index: -999;
-    
-    transition: opacity 1.5s ease;
-    -webkit-transition: opacity 1.5s;
+    color:#C80000;
 }
 .App{
     color:white;
@@ -54,73 +32,39 @@ a:hover{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    font-family: conthrax;
-    height:100vh;
-}
-.title{
-    font-style: italic;
-    font-size:8vh;
-    margin-top:0;
-    margin-bottom: 0;
-    opacity:1;
-    line-height: 75px;
-
-    transition: opacity, margin 1s ease;
-    -webkit-transition: opacity, margin 1s;
-}
-.title-unloaded{
-    opacity:0;
-    font-size:8vh;
-    font-style: italic;
-
-    transition: opacity, margin 1s ease;
-    -webkit-transition: opacity, margin 1s;
+    font-family: inter;
+    margin-bottom:80px;
 }
 .Info{
-    background-color: black;
-    padding:40px;
-    border-radius: 10px;
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width:37vw;
-    max-height: 78vh;
-    overflow: auto;
-
-    scrollbar-color: white transparent;
-    scrollbar-width:auto;
-}
-/* width */
-.Info::-webkit-scrollbar {
-width: 8px;
-}
-
-/* Track */
-.Info::-webkit-scrollbar-track {
-background: transparent;
-}
-
-/* Handle */
-.Info::-webkit-scrollbar-thumb {
-background: white;
-border-radius: 10px;
-}
-
-/* Handle on hover */
-.Info::-webkit-scrollbar-thumb:hover {
-background: #555;
+    width:45vw;
 }
 .Header{
     display:flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding:25px 0;
+    margin-top:5vh;
+}
+.logo{
+    margin-bottom: 10px;
+    opacity:1;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s;
+}
+.logo-unloaded{
+    opacity:0;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s;
 }
 .Socials{
     display:flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .socialIcon{
     margin-right:14px;
@@ -130,7 +74,7 @@ background: #555;
     -webkit-transition: opacity 1s;
 }
 .socialIcon:hover{
-    color: #cd84df;
+    color: #C80000;
 }
 .socialIcon-unloaded{
     opacity:0;
@@ -142,7 +86,8 @@ background: #555;
     overflow:hidden;
     width:100%;
     padding-top: 56.25%;/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-bottom:25px;
 }
 .iframe-responsive{
     position: absolute;
@@ -153,120 +98,34 @@ background: #555;
     width:100%;
     height:100%;
 }
-.Promo{
-    width:100%;
-    grid-column: 1;
-    grid-row: 1;
-    width:100%;
-    border-radius: 10px;
-    opacity:1;
-    transition: opacity 1s ease;
-    -webkit-transition: opacity 1s;
-}
 
-#promo.hover-active{
-    grid-column: 1;
-    grid-row: 1;
-    z-index:99;
-    background-color: black;
-    opacity:0.87;
-    margin:0;
-    pointer-events: none;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    opacity:0.8;
-
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s;
-}
-#promo.hover-inactive {
-    grid-column: 1;
-    grid-row: 1;
-    z-index:99;
-    background-color: black;
-    opacity:0.87;
-    margin:0;
-    pointer-events: none;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    opacity:0;
-
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s;
-}
-#promo > .hover-text{
-    font-size:3rem;
-}
 .no-desktop{
     display:none;
 }
 
-@media only screen and (max-width: 1475px) {
-    .Header{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .Socials{
-        justify-content: flex-start;
-    }
-    .Team{
-        width:100%;
+@media only screen and (max-width: 1200px) {
+    .Info{
+        width:65vw;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    body{
-        background-image: url('./images/aloremobile.jpg');
-        background-attachment:fixed;
-        overflow:scroll;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .App{
-        height:100%;
-    }
-    .Overlay{
-        position: fixed;
-        height:100%;
-    }
     .Info{
         padding:0;
-        background-color: transparent;
-        justify-content: center;
-        align-items: center;
-        width:100%;
+        width:80%;
         max-height: unset;
         margin-top:3vh;
-
-        overflow-y:scroll;
-        overflow-x:hidden;
     }
     .title{
         width:85vw;
         font-size:8vh;
         margin-bottom: 2vh;
     }
-    h3, .Header{
-        width:85vw;
-    }
     h3{
         text-align: left;
     }
-    .iframe-container, .Promo{
+    .iframe-container{
         border-radius: 0;
-    }
-    .promo-container{
-        
-    }
-    #promo.hover-active{
-        display:none;
-    }
-    #promo.hover-inactive{
-        display:none;
     }
     .no-desktop{
         display:block;
@@ -281,13 +140,13 @@ background: #555;
         background-color: white;
         color: black;
         padding:16px 25px;
-        border-radius: 10px;
+        border-radius: 5px;
         font-size:1.2rem;
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
     .Info, .title, .Socials, .Team{
-        width:100vw;
+        width:100%;
     }
 }

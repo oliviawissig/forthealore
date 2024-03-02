@@ -1,0 +1,44 @@
+.contact-form{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    font-size:1.5vh;
+    text-transform: uppercase;
+}
+
+.input, .input-box{
+    margin-bottom: 12px;
+    border-radius: 3px;
+    border:none;
+    padding:10px;
+    font-family: Inter;
+}
+.g-recaptcha{
+    align-self: center;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+.grecaptcha-badge{
+    display:none;
+}
+.input-label{
+    margin-bottom:3px;
+}
+.required{
+    color:red;
+}
+
+.submit-btn{
+    background-color: #C80000;
+    border:none;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+    width:60%;
+    margin:auto;
+}
+
+.submit-btn:hover{
+    background-color: #950000;
+    cursor: pointer;
+}
