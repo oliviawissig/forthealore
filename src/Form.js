@@ -20,6 +20,10 @@ export const Form = () => {
           console.log('FAILED...', error.text);
         },
     );
+
+    const onSubmit = (token) => {
+      document.getElementById("contact-form").submit();
+    }
   };
 
   return (
