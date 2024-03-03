@@ -4,10 +4,11 @@ import Form from './Form';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram, faTiktok, faSoundcloud, faYoutube, faDiscord} from '@fortawesome/free-brands-svg-icons';
-import shinoImg from './images/shino.jpg';
-import jasonImg from './images/jason.jpg';
-import matthewImg from './images/matthew.jpg';
-import hofImg from './images/hofisbetter.jpg';
+import solace from './images/solace.png'
+import organic from './images/organic.png'
+import xavier from './images/xavier.png'
+import shmunty from './images/shmunty.png'
+import jcash from './images/jcash.png'
 import logo from './images/alore-logo.PNG';
 
 import { useEffect, useState } from 'react';
@@ -31,10 +32,11 @@ function App() {
         </div>
         <h3>meet the team:</h3>
         <div className='Team'>
-            <TeamCard memberName="SHINO SMOKE" memberImg={shinoImg} href='https://www.instagram.com/shinosmoke/' className={loaded ? "TeamImg" : "TeamImg-unloaded"}/>
-            <TeamCard memberName="JASON" memberImg={jasonImg} href='https://www.instagram.com/jason__gtz/' className={loaded ? "TeamImg" : "TeamImg-unloaded"}/>
-            <TeamCard memberName="MATTHEW" memberImg={matthewImg} href='https://www.instagram.com/paduaudap/' className={loaded ? "TeamImg" : "TeamImg-unloaded"}/>
-            <TeamCard memberName="HOF SAC" memberImg={hofImg} href='https://www.instagram.com/hofisbetter/' className={loaded ? "TeamImg" : "TeamImg-unloaded"}/>
+            <TeamCard memberName="SOLACE DENIM" memberImg={solace} href='https://www.instagram.com/solacedenim/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='720' height='1077'/>
+            <TeamCard memberName="MISS ORGANIC" memberImg={organic} href='https://www.instagram.com/ms.orgaanic/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='596' height='883'/>
+            <TeamCard memberName="TWOSEVEN" memberImg={xavier} href='https://www.instagram.com/2700jit/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='614' height='909'/>
+            <TeamCard memberName="SHMUNTY" memberImg={shmunty} href='https://www.instagram.com/shmunty/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='585' height='875'/>
+            <TeamCard memberName="JCASH" memberImg={jcash} href='https://www.instagram.com/jcashbta/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='1312' height='1968'/>
         </div>
         <h3>hit us:</h3>
         <Form/>

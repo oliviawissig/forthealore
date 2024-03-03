@@ -1,92 +1,98 @@
-a:hover{
-    color:white;   
+p{
+    margin:0;
 }
-.TeamCard{
-    display:grid;
-    overflow-wrap: break-word;
+
+a{
+    
 }
-.Team{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom:55px;
-    justify-content: space-between;
-}
+
 .TeamImg{
-    grid-column: 1;
-    grid-row: 1;
-    width:10vw;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     opacity:1;
-    transition: opacity 1s ease;
-    -webkit-transition: opacity 1s;
-    overflow-wrap: break-word;
+    min-height:100%; 
+    min-width: 100%; 
+    object-fit: cover;
+    transition: opacity,filter 1s ease;
+    -webkit-transition: opacity,filter 1s;
 }
 .TeamImg-unloaded{
     opacity:0;
-    transition: opacity 1s ease;
-    -webkit-transition: opacity 1s;
+    transition: opacity,filter 1s ease;
+    -webkit-transition: opacity,filter 1s;
 }
-.hover-active{
-    grid-column: 1;
-    grid-row: 1;
-    z-index:99;
-    background-color: black;
-    margin:0;
-    pointer-events: none;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:100%;
-    flex-basis: 25%;
-    opacity:0.8;
-    border-radius: 5px;
-
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s;
+.TeamImg:hover{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
-.hover-inactive{
-    grid-column: 1;
-    grid-row: 1;
-    z-index:99;
-    background-color: black;
-    margin:0;
-    pointer-events: none;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:100%;
-    opacity:0;
-    border-radius: 5px;
-
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s;
-}
-.hover-text{
-    font-size: 0.95rem;
-    text-align: center;
+.team-card-container{
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     padding:10px;
-    overflow-wrap: break-word;
+    border-radius: 3px;
+    transition: border 1s ease;
+    -webkit-transition: border 1s;
+}
+.team-card-container:hover{
+    border: 1px solid rgba(200, 0, 0, 0.7);
+    transition: border 1s ease;
+    -webkit-transition: border 1s;
+}
+
+.card-img-container{
+    height:20vw;
+    width:13vw;
+    margin:0 auto;
+    overflow: hidden;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding:10px 0;
+}
+
+.card-link{
+    /* align-self: flex-end; */
+    font-style: italic;
+    color:white;
+}
+
+.team-card-container:hover a{
+    color:#C80000;
+    transition: color 1s ease;
+    -webkit-transition: color 1s;
 }
 
 @media only screen and (max-width: 1200px) {
-    .TeamImg{
-        width:15vw;
+    .card-img-container{
+        height:25vw;
+        width:18vw;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    /* .hover-active{
-        display:none;
+    .card-img-container{
+        height:40vw;
+        width:30vw;
     }
-    .hover-inactive{
-        display:none;
-    } */
-    .TeamImg{
-        width:20vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-img-container{
+        height:80vw;
+        width:70vw;
     }
 }
 
 @media only screen and (max-width: 300px) {
-
+    .card-img-container{
+        height:100vw;
+        width:90vw;
+    }
 }

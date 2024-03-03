@@ -42,3 +42,8 @@
     background-color: #950000;
     cursor: pointer;
 }
+
+.success-msg{
+    min-height: 95px;
+    font-style: italic;
+}

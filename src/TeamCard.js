@@ -15,12 +15,13 @@ function TeamCard({ href, memberName, memberImg, className  }) {
     }
 
     return ( 
-        <a href={href}>
-            <div className='TeamCard'>
-                <div className={hover}>
-                    <p className='hover-text'>{memberName}</p>
-                </div>
-                <img src={memberImg} className={className} alt={"profile avatar of " + memberName} onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)} ></img>
+        <a href={href} className="team-card-container">
+            <div className='card-img-container'>
+                <img src={memberImg} className={className} alt={"profile avatar of " + memberName} ></img>
+            </div>
+            <div className="card-body">
+                <p>{memberName}</p>
+                <a href='' className="card-link">Instagram &#8594;</a>
             </div>
         </a>
      );
