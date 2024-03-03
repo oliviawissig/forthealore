@@ -5,7 +5,9 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Form() {
   const refCaptcha = useRef();
-  const [formSubmitted, setFormSubmitted] = useState(false)
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [showFormErr, setShowFormErr] = useState(false);
+  const [formErr, setFormErr] = useState('');
 	const [toSend, setToSend, ] = useState({
     name: '',
     email: '',
@@ -32,9 +34,13 @@ export default function Form() {
 				(status) => {
 					console.log(status);
           setFormSubmitted(true);
+          setShowFormErr(false);
+          setFormErr('');
 				},
 				(err) => {
-					console.log("EMAILJS ERROR", err);
+					console.log("EMAILJS ERROR", err.text);
+          setShowFormErr(true);
+          setFormErr(err.text);
 				}
 			);
 	};
@@ -91,6 +97,7 @@ export default function Form() {
         sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
         ref={refCaptcha} theme='dark'
         />
+        {showFormErr ? <p style={{alignSelf:'center', paddingBottom:10, color: 'red'}}>{formErr}</p> : <></>}
         <input
           type="submit"
           value="Send"

@@ -1,23 +1,11 @@
-import { useState } from "react";
 import './TeamCard.css';
 
 function TeamCard({ href, memberName, memberImg, className  }) {
-    const [hover, setHover] = useState("hover-inactive");
-    
-    const onHover = (e) => {
-        e.preventDefault();
-        setHover("hover-active");
-    }
-
-    const onHoverOver = (e) => {
-        e.preventDefault();
-        setHover("hover-inactive");
-    }
 
     return ( 
         <a href={href} className="team-card-container">
             <div className='card-img-container'>
-                <img src={memberImg} className={className} alt={"profile avatar of " + memberName} ></img>
+                <img src={memberImg} className={className} alt={"profile avatar of " + memberName} style={memberName === 'SHINO SMOKE' ? {alignSelf:'flex-start'} : {}}></img>
             </div>
             <div className="card-body">
                 <p>{memberName}</p>

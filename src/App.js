@@ -9,6 +9,7 @@ import organic from './images/organic.png'
 import xavier from './images/xavier.png'
 import shmunty from './images/shmunty.png'
 import jcash from './images/jcash.png'
+import shino from './images/shino.png'
 import logo from './images/alore-logo.PNG';
 
 import { useEffect, useState } from 'react';
@@ -32,6 +33,7 @@ function App() {
         </div>
         <h3>meet the team:</h3>
         <div className='Team'>
+          <TeamCard memberName="SHINO SMOKE" memberImg={shino} href='https://www.instagram.com/shinosmoke/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='720' height='1077'/>
             <TeamCard memberName="SOLACE DENIM" memberImg={solace} href='https://www.instagram.com/solacedenim/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='720' height='1077'/>
             <TeamCard memberName="MISS ORGANIC" memberImg={organic} href='https://www.instagram.com/ms.orgaanic/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='596' height='883'/>
             <TeamCard memberName="TWOSEVEN" memberImg={xavier} href='https://www.instagram.com/2700jit/' className={loaded ? "TeamImg" : "TeamImg-unloaded"} width='614' height='909'/>
