@@ -7,8 +7,8 @@ A landing page for all things ALORE. This originally sarted as a personal projec
 A major attribute I focused on while creating this site was the loading animations and transitions. I am more streamlined when it comes to my project structure and components, which allowed me to implement loading animations and hover effects much easier. The next iteration of the site will receive a much needed face lift, as well as functional improvements overall. A future goal is to include a shop page for merchandise and event tickets. 
 
 <span align="center">
-  <img src="https://i.imgur.com/WiTYFPG.png" alt="" width="625"/>
-  <img src="https://i.imgur.com/aqt24jv.png" alt="" width="170"/>
+  <img src="https://i.imgur.com/yVC41Qa.png" alt="" width="665"/>
+  <img src="https://i.imgur.com/J3XPxr0.png" alt="" width="190"/>
 </span>
 
 ### Built With
