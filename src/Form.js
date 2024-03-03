@@ -23,10 +23,10 @@ export default function Form() {
 
 		emailjs
 			.send(
-				"service_r24ify8",
-				"template_vhps1zk",
+				process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
+				process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
 				params,
-				"ChuYpA25XmKj00BiR"
+				process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY
 			)
 			.then(
 				(status) => {
@@ -88,7 +88,7 @@ export default function Form() {
           onChange={handleChange}
         />
         <ReCAPTCHA style={{alignSelf:'center', paddingBottom:10}}
-        sitekey="6LdspocpAAAAAMAhc9LTSd3WBbaeHlivM4gz9aq-"
+        sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
         ref={refCaptcha} theme='dark'
         />
         <input
