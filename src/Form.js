@@ -50,7 +50,7 @@ export default function Form() {
   };
 
 	return (
-		<div>
+		<div className="form-container">
       {!formSubmitted ? (
         <form
         onSubmit={handleSubmit}

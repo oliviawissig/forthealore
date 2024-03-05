@@ -42,15 +42,17 @@ function App() {
 				<h3>alore live:</h3>
 				<div className="alore-live-container">
 					<div className="alore-live">
-						<img
-							src={flyer}
-							className={
-								loaded
-									? "alore-live-img"
-									: "alore-live-img-unloaded"
-							}
-							alt="alore x love supreme sacramento flyer"
-						/>
+          <a href="https://www.eventbrite.com/e/alore-live-love-supreme-tiger-friday-march-22nd-tickets-856585890457?aff=oddtdtcreator" target="_blank" rel="noreferrer">
+              <img
+                src={flyer}
+                className={
+                  loaded
+                    ? "alore-live-img"
+                    : "alore-live-img-unloaded"
+                }
+                alt="alore x love supreme sacramento flyer"
+              />
+            </a>
 						<a href="https://www.eventbrite.com/e/alore-live-love-supreme-tiger-friday-march-22nd-tickets-856585890457?aff=oddtdtcreator" target="_blank" rel="noreferrer">
               <div className="btn">
                 <span className="btn-text">Buy Tickets</span>
@@ -121,7 +123,7 @@ function App() {
 						height="1968"
 					/>
 				</div>
-				<h3>hit us:</h3>
+				<h3>contact:</h3>
 				<Form />
 				<div className="Socials">
 					<a
