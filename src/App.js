@@ -16,6 +16,8 @@ import xavier from "./images/xavier.png";
 import shmunty from "./images/shmunty.png";
 import jcash from "./images/jcash.png";
 import shino from "./images/shino.png";
+import matthew from './images/matthew.PNG'
+import jason from './images/jason.jpg'
 import logo from "./images/alore-logo.PNG";
 import flyer from "./images/love_supreme_flyer.JPG";
 
@@ -62,15 +64,7 @@ function App() {
 				</div>
 				<h3>alore radio:</h3>
 				<div className="iframe-container">
-					<iframe
-						className="iframe-responsive"
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/2K-PCaqQWFM?si=NQ4GKOdTSgcT1DfK"
-						title="YouTube video player"
-						frameBorder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowFullScreen></iframe>
+					<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/o7-81FlfEJs?si=j6Lsbt7sTVEcsTZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
 				<h3>meet the team:</h3>
 				<div className="Team">
@@ -121,6 +115,22 @@ function App() {
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="1312"
 						height="1968"
+					/>
+					<TeamCard
+						memberName="JASON"
+						memberImg={jason}
+						href="https://www.instagram.com/paduaudap/"
+						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
+						width="768"
+						height="614"
+					/>
+					<TeamCard
+						memberName="MATTHEW"
+						memberImg={matthew}
+						href="https://www.instagram.com/jason__gtz/"
+						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
+						width="1290"
+						height="2556"
 					/>
 				</div>
 				<h3>contact:</h3>

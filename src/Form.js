@@ -93,10 +93,7 @@ export default function Form() {
           placeholder="What's up?"
           onChange={handleChange}
         />
-        <ReCAPTCHA style={{alignSelf:'center', paddingBottom:10}}
-        sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-        ref={refCaptcha} theme='dark'
-        />
+        <ReCAPTCHA style={{alignSelf:'center', paddingBottom:10}} sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} ref={refCaptcha} theme='dark'/>
         {showFormErr ? <p style={{alignSelf:'center', paddingBottom:10, color: 'red'}}>{formErr}</p> : <></>}
         <input
           type="submit"
