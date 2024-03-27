@@ -10,17 +10,9 @@ import {
 	faYoutube,
 	faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
-import solace from "./images/solace.png";
-import organic from "./images/organic.png";
-import xavier from "./images/xavier.png";
-import shmunty from "./images/shmunty.png";
-import jcash from "./images/jcash.png";
-import shino from "./images/shino.png";
-import matthew from "./images/matthew.PNG";
-import jason from "./images/jason.jpg";
-import logo from "./images/alore-logo.PNG";
 
 import { useEffect, useState } from "react";
+
 
 function App() {
 	const [loaded, setLoaded] = useState(false);
@@ -33,7 +25,7 @@ function App() {
 		<div className="App">
 			<div className="Header">
 				<img
-					src={logo}
+					src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/zmrvt05zz1t4oiswipv1"
 					className={loaded ? "logo" : "logo-unloaded"}
 					alt="alore logo"
 					width="296"
@@ -96,7 +88,7 @@ function App() {
 				<div className="Team">
 					<TeamCard
 						memberName="Shino Smoke"
-						memberImg={shino}
+						memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/icabnapkiqf2fpf31tp4"
 						href="https://www.instagram.com/shinosmoke/"
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="720"
@@ -104,7 +96,7 @@ function App() {
 					/>
 					<TeamCard
 						memberName="Solace Denim"
-						memberImg={solace}
+						memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/obcifi92l2zt7sdpx6ks"
 						href="https://www.instagram.com/solacedenim/"
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="720"
@@ -112,7 +104,7 @@ function App() {
 					/>
 					<TeamCard
 						memberName="Miss Organic"
-						memberImg={organic}
+						memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ygbgjynwb3lq9y3akrnp"
 						href="https://www.instagram.com/ms.orgaanic/"
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="596"
@@ -120,15 +112,15 @@ function App() {
 					/>
 					<TeamCard
 						memberName="Two-Seven"
-						memberImg={xavier}
-						href="https://www.instagram.com/2700jit/"
+						memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/bywgph8iwszbi7zc1nvu"
+						href="https://www.instagram.com/x8v1er/"
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="614"
 						height="909"
 					/>
 					<TeamCard
 						memberName="Shmunty"
-						memberImg={shmunty}
+						memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/gzktarac5tocf6ldojuj"
 						href="https://www.instagram.com/shmunty/"
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="585"
@@ -136,7 +128,7 @@ function App() {
 					/>
 					<TeamCard
 						memberName="J Cash"
-						memberImg={jcash}
+						memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/vxjbrsiz8q2rictewbmq"
 						href="https://www.instagram.com/jcashbta/"
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="1312"
@@ -144,16 +136,16 @@ function App() {
 					/>
 					<TeamCard
 						memberName="Jason"
-						memberImg={jason}
-						href="https://www.instagram.com/paduaudap/"
+						memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/enacnnihra8x43jsnvpf"
+						href="https://www.instagram.com/jason__gtz/"
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="768"
 						height="614"
 					/>
 					<TeamCard
 						memberName="Matthew"
-						memberImg={matthew}
-						href="https://www.instagram.com/jason__gtz/"
+						memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/x2l5mbefnimugmz2wufn"
+						href="https://www.instagram.com/paduaudap/"
 						className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 						width="1290"
 						height="2556"
