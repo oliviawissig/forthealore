@@ -19,7 +19,6 @@ import shino from "./images/shino.png";
 import matthew from './images/matthew.PNG'
 import jason from './images/jason.jpg'
 import logo from "./images/alore-logo.PNG";
-import flyer from "./images/love_supreme_flyer.JPG";
 
 import { useEffect, useState } from "react";
 
@@ -41,30 +40,9 @@ function App() {
 						width="175"
 					/>
 				</div>
-				<h3>alore live:</h3>
-				<div className="alore-live-container">
-					<div className="alore-live">
-          <a href="https://www.eventbrite.com/e/alore-live-love-supreme-tiger-friday-march-22nd-tickets-856585890457?aff=oddtdtcreator" target="_blank" rel="noreferrer">
-              <img
-                src={flyer}
-                className={
-                  loaded
-                    ? "alore-live-img"
-                    : "alore-live-img-unloaded"
-                }
-                alt="alore x love supreme sacramento flyer"
-              />
-            </a>
-						<a href="https://www.eventbrite.com/e/alore-live-love-supreme-tiger-friday-march-22nd-tickets-856585890457?aff=oddtdtcreator" target="_blank" rel="noreferrer">
-              <div className="btn">
-                <span className="btn-text">Buy Tickets</span>
-              </div>
-						</a>
-					</div>
-				</div>
 				<h3>alore radio:</h3>
 				<div className="iframe-container">
-					<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/o7-81FlfEJs?si=j6Lsbt7sTVEcsTZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/BHMAGWTIgcc?si=_IsS5Zsf7QTo7P9y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 				<h3>meet the team:</h3>
 				<div className="Team">
