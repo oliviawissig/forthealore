@@ -1,6 +1,5 @@
 .form-container{
-    width:90%;
-    margin:auto;
+    
 }
 
 .contact-form{
@@ -28,6 +27,7 @@
 }
 .input-label{
     margin-bottom:3px;
+    font-size:1.1rem;
 }
 .required{
     color:red;
@@ -51,6 +51,7 @@
     text-align: center;
     justify-content: center;
     align-self: center;
+    font-family: oswald;
 }
 
 .submit-btn:hover{

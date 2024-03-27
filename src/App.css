@@ -3,6 +3,11 @@
 	src: url(Inter-VariableFont_slnt,wght.ttf);
 	font-weight: 100 1000;
 }
+@font-face {
+	font-family: oswald;
+	src: url(Oswald-VariableFont_wght.ttf);
+	font-weight: 100 1000;
+}
 ::-moz-selection {
 	/* Code for Firefox */
 	/* color: white;
@@ -17,12 +22,9 @@ a {
 	text-decoration: none;
 }
 h3 {
-	font-size: 2.7vh;
+	font-size: 2.2rem;
 	text-transform: uppercase;
 	font-weight: 500;
-}
-img {
-	height: 100%;
 }
 a:hover {
 	color: #c80000;
@@ -30,34 +32,43 @@ a:hover {
 .App {
 	color: white;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: center;
-	font-family: inter;
-	margin-bottom: 80px;
-}
-.Info {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	width: 50vw;
+	font-family: oswald;
+	margin-bottom: 30px;
+	justify-content: space-around;
 }
 .Header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding: 25px 0;
-	margin-top: 5vh;
+	position: sticky;
+	top:20px;
+
+	display:flex;
+	flex-direction: column;
+	align-self: flex-start;
+	width: 300px;
+	margin:20px;
+}
+.site-body{
+	width:65vw;
 }
 .logo {
-	margin-bottom: 10px;
 	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width:100%;
+	height:auto;
+
+	margin:40px 0px;
+
 	transition: opacity 1s ease;
 	-webkit-transition: opacity 1s;
 }
 .logo-unloaded {
 	opacity: 0;
+
 	transition: opacity 1s ease;
 	-webkit-transition: opacity 1s;
 }
@@ -65,11 +76,11 @@ a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 1;
-	justify-content: center;
+	justify-content: space-evenly;
 	color: white;
+	margin-top: 300px;
 }
 .socialIcon {
-	margin-right: 14px;
 	font-size: 4vh;
 	opacity: 1;
 	transition: opacity 1s ease;
@@ -184,17 +195,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-	.Info {
+	/* .Info {
 		width: 65vw;
-	}
+	} */
 }
 
 @media only screen and (max-width: 1024px) {
-	.Info {
-		padding: 0;
-		width: 80%;
-		max-height: unset;
-		margin-top: 3vh;
+	.site-body {
+		width: 90vw;
+		margin:auto;
 	}
 	.title {
 		width: 85vw;
@@ -223,13 +232,17 @@ a:hover {
 		border-radius: 5px;
 		font-size: 1.2rem;
 	}
-	.Header {
-		margin-top: 2vh;
+	.Header{
+		position:relative;
+		width:250px;
+	}
+	.Socials{
+		margin-top:220px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
-	.Info,
+	/* .Info,
 	.title,
 	.Socials,
 	.Team {
@@ -239,5 +252,5 @@ a:hover {
     .alore-live{
         width:100%;
         padding: 0px;
-    }
+    } */
 }
