@@ -68,10 +68,19 @@ function App() {
 						<FontAwesomeIcon icon={faDiscord} size="sm" />
 					</a>
 				</div>
+				{/* <div className="promo">
+					<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/xnfmmfpgsqv6yrbk6lu5" alt="NOODZ promo" width="720" height="898" className="promo-img"/>
+				</div> */}
 			</div>
 
 			<div className="site-body">
-				<h3>alore radio:</h3>
+				<h3>alore live:</h3>
+				<div className="promo">
+					<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/xnfmmfpgsqv6yrbk6lu5" alt="NOODZ promo" width="720" height="898" className="promo-img"/>
+					<a href="https://socialcluboftomorrow.com/" className="btn">Get Access</a>
+				</div>
+				
+				<h3>alore live:</h3>
 				<div className="iframe-container">
 					<iframe
 						className="iframe-responsive"
