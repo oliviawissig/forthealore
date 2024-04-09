@@ -13,7 +13,6 @@ import {
 
 import { useEffect, useState } from "react";
 
-
 function App() {
 	const [loaded, setLoaded] = useState(false);
 
@@ -70,16 +69,11 @@ function App() {
 				</div>
 				{/* <div className="promo">
 					<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/xnfmmfpgsqv6yrbk6lu5" alt="NOODZ promo" width="720" height="898" className="promo-img"/>
+					<a href="https://socialcluboftomorrow.com/" className="btn">Get Access</a>
 				</div> */}
 			</div>
 
 			<div className="site-body">
-				<h3>alore live:</h3>
-				<div className="promo">
-					<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/xnfmmfpgsqv6yrbk6lu5" alt="NOODZ promo" width="720" height="898" className="promo-img"/>
-					<a href="https://socialcluboftomorrow.com/" className="btn">Get Access</a>
-				</div>
-				
 				<h3>alore live:</h3>
 				<div className="iframe-container">
 					<iframe
@@ -87,6 +81,30 @@ function App() {
 						width="560"
 						height="315"
 						src="https://www.youtube.com/embed/BHMAGWTIgcc?si=_IsS5Zsf7QTo7P9y"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen></iframe>
+				</div>
+				<div className="iframe-container">
+					<iframe
+						className="iframe-responsive"
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/EneKpOkihms?si=up2TSr-Ze_PS8K2B"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen></iframe>
+				</div>
+				<div className="iframe-container">
+					<iframe
+						className="iframe-responsive"
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/ziDoq4_sbq8?si=TGPUUHkKJX93QlgW"
 						title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
