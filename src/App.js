@@ -75,6 +75,14 @@ function App() {
 
 			<div className="site-body">
 				<h3>alore live:</h3>
+				<div className="promo">
+					<a href="https://www.eventbrite.com/e/hyphy-house-tiger-friday-april-26th-tickets-883750209667?utm_experiment=test_share_listing&aff=ebdsshios">
+						<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/i9lbo6jdz0jd24qy2c7h" alt="NOODZ promo" width="720" height="898" className="promo-img"/>
+					</a>
+					<a href="https://www.eventbrite.com/e/hyphy-house-tiger-friday-april-26th-tickets-883750209667?utm_experiment=test_share_listing&aff=ebdsshios" className="btn">Get Access</a>
+				</div>
+
+				<h3>previous performances:</h3>
 				<div className="iframe-container">
 					<iframe
 						className="iframe-responsive"
