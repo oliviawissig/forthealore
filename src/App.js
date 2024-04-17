@@ -84,40 +84,9 @@ function App() {
 
 				<h3>previous performances:</h3>
 				<div className="iframe-container">
-					<iframe
-						className="iframe-responsive"
+				<iframe className="iframe-responsive"
 						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/BHMAGWTIgcc?si=_IsS5Zsf7QTo7P9y"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin"
-						allowfullscreen></iframe>
-				</div>
-				<div className="iframe-container">
-					<iframe
-						className="iframe-responsive"
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/EneKpOkihms?si=up2TSr-Ze_PS8K2B"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin"
-						allowfullscreen></iframe>
-				</div>
-				<div className="iframe-container">
-					<iframe
-						className="iframe-responsive"
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/ziDoq4_sbq8?si=TGPUUHkKJX93QlgW"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin"
-						allowfullscreen></iframe>
+						height="315" src="https://www.youtube.com/embed/rFOtFp8Gyrw?si=oCZKpN3Zm_9MCpDZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 				<h3>meet the team:</h3>
 				<div className="Team">
