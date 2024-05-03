@@ -74,15 +74,15 @@ function App() {
 			</div>
 
 			<div className="site-body">
-				<h3>alore live:</h3>
+				{/* <h3>alore live:</h3>
 				<div className="promo">
 					<a href="https://www.eventbrite.com/e/hyphy-house-tiger-friday-april-26th-tickets-883750209667?utm_experiment=test_share_listing&aff=ebdsshios">
 						<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/alorehyphyhouse_fmyb3i" alt="hyphy house promo flyer" width="720" height="898" className="promo-img"/>
 					</a>
 					<a href="https://www.eventbrite.com/e/hyphy-house-tiger-friday-april-26th-tickets-883750209667?utm_experiment=test_share_listing&aff=ebdsshios" className="btn">Get Access</a>
-				</div>
+				</div> */}
 
-				<h3>previous performances:</h3>
+				<h3>youtube channel:</h3>
 				<div className="iframe-container">
 				<iframe className="iframe-responsive"
 						width="560"
