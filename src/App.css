@@ -21,7 +21,7 @@ a {
 	color: white;
 	text-decoration: none;
 }
-h3 {
+h2 {
 	font-size: 2.2rem;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -56,26 +56,40 @@ a:hover {
 .site-body{
 	width:65vw;
 }
-.logo {
-	opacity: 1;
+.blurred-logo-img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	width:100%;
-	height:auto;
+	height:208px;
+
+	margin:40px 0px;
+	background-image: url('https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.08,w_0.08/b_rgb:232B2B/zmrvt05zz1t4oiswipv1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.blurred-logo-img-loaded{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width:100%;
+	height:208px;
 
 	margin:40px 0px;
 
-	transition: opacity 1s ease;
-	-webkit-transition: opacity 1s;
+	background-image: none;
 }
-.logo-unloaded {
-	opacity: 0;
-
-	transition: opacity 1s ease;
-	-webkit-transition: opacity 1s;
+.blurred-promo-img{
+	background-image: url('https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_30,w_30/eteu6ib69cczx9esqyzz.jpg');
+    background-position: center;
+	background-size: cover;
+	display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .Socials {
 	display: flex;
@@ -83,7 +97,7 @@ a:hover {
 	flex-grow: 1;
 	justify-content: space-evenly;
 	color: white;
-	margin-top: 300px;
+	margin-top:300px;
 }
 .socialIcon {
 	font-size: 4vh;
@@ -106,6 +120,10 @@ a:hover {
 	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 	border-radius: 5px;
 	margin-bottom: 25px;
+
+	background-image: url('https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.10,w_0.10/vfyynxrgzd8awcbskfwr.jpg');
+    background-position: center;
+	background-size: cover;
 }
 .iframe-responsive {
 	position: absolute;
@@ -170,6 +188,8 @@ a:hover {
 
 .btn:hover{
     color:white;
+	background-color: #950000;
+    cursor: pointer;
 }
 
 .promo{
@@ -204,8 +224,9 @@ a:hover {
 		font-size: 8vh;
 		margin-bottom: 2vh;
 	}
-	h3 {
+	h2 {
 		text-align: left;
+		font-size: 2.8rem;
 	}
 	.iframe-container {
 		border-radius: 0;
@@ -227,15 +248,29 @@ a:hover {
 		font-size: 1.2rem;
 	}
 	.Header{
-		position:relative;
-		width:250px;
+		position: relative;
+		width:90%;
+		margin:auto;
 	}
 	.Socials{
-		margin-top:220px;
+		width:60%;
+		margin:auto;
+		margin-top:250px;
+		margin-bottom: 50px;
+	}
+	.blurred-logo-img-loaded{
+		height:100%;
+		text-align: center;	
+	}
+	.promo{
+		margin-bottom: 60px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
+	.Socials{
+		width:90%;
+	}
 	/* .Info,
 	.title,
 	.Socials,
