@@ -95,7 +95,13 @@ function App() {
 
 					<h2>youtube channel:</h2>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/24CgikCK4uk?si=o5p5WX_YXrK4dFzx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/G9B0FEnsSTQ?si=pzuMznYwl2z1V1Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div className="iframe-container">
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/MJLB5ICKuoo?si=xtodoJw9iM0_AJjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div className="iframe-container">
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/98V3ub994o4?si=Drbm9_VV3xeEN-7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<h2>meet the team:</h2>
 					<div className="Team">
