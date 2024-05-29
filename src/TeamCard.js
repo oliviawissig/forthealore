@@ -8,12 +8,12 @@ const team_lazy_load_imgs = {
     shmunty: 'https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.10,w_0.10/gzktarac5tocf6ldojuj.jpg', 
     jcash: 'https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.10,w_0.10/vxjbrsiz8q2rictewbmq.jpg', 
     jason: 'https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.10,w_0.10/v1711513852/enacnnihra8x43jsnvpf.jpg',
-    matthew: 'https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.10,w_0.10/v1711513865/x2l5mbefnimugmz2wufn.png'
+    matthew: 'https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.10,w_0.10/v1711513865/x2l5mbefnimugmz2wufn.png',
+    donte: 'https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.10,w_0.10/v8enht8m166fcn55e6ua.jpg'
 }
 
 function TeamCard({ href, memberName, memberImg, memberId,  className, width, height  }) {
     const team_lazy_load_url = team_lazy_load_imgs[memberId];
-    console.log(team_lazy_load_url)
 
     return ( 
         <a href={href} className="team-card-container">
@@ -25,7 +25,6 @@ function TeamCard({ href, memberName, memberImg, memberId,  className, width, he
             <div className="card-body">
                 <p style={{fontSize:'1.2rem'}}>{memberName}</p>
                 <a href={href} className="card-link">Instagram 
-                {/* <span className='card-arrow'>&#8594;</span> */}
                 </a>
             </div>
         </a>

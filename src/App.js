@@ -83,7 +83,7 @@ function App() {
 				</div>
 
 				<div className="site-body">
-					<h2>alore live:</h2>
+					{/* <h2>alore live:</h2>
 					<div className="promo">
 						<a href="https://www.eventbrite.com/e/alore-presents-the-klm-experience-tickets-899270210407?aff=oddtdtcreator">
 							<div className="blurred-promo-img">
@@ -91,17 +91,17 @@ function App() {
 							</div>
 						</a>
 						<a href="https://www.eventbrite.com/e/alore-presents-the-klm-experience-tickets-899270210407?aff=oddtdtcreator" className="btn">Buy Tickets</a>
-					</div>
+					</div> */}
 
 					<h2>youtube channel:</h2>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/G9B0FEnsSTQ?si=pzuMznYwl2z1V1Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe className="iframe-responsive"  width="560" height="315" src="https://www.youtube.com/embed/dAJXbJsxmAk?si=8zsrVs96DqO5p0Kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div className="iframe-container">
 						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/MJLB5ICKuoo?si=xtodoJw9iM0_AJjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/98V3ub994o4?si=Drbm9_VV3xeEN-7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/G9B0FEnsSTQ?si=TJtBQ2g-KjsAKasf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<h2>meet the team:</h2>
 					<div className="Team">
@@ -165,6 +165,14 @@ function App() {
 							memberName="Matthew" memberId="matthew"
 							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/x2l5mbefnimugmz2wufn"
 							href="https://www.instagram.com/paduaudap/"
+							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
+							width="1290"
+							height="2556"
+						/>
+						<TeamCard
+							memberName="Donte" memberId="donte"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/v8enht8m166fcn55e6ua"
+							href="https://www.instagram.com/wavydonte/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="1290"
 							height="2556"
