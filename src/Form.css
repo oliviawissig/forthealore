@@ -38,7 +38,7 @@
 }
 
 .submit-btn{
-    background-color: #c80000;
+    background-color: #ec1426;
     width: 200px;
     padding:15px;
     border-radius: 5px;
@@ -49,7 +49,6 @@
     font-weight: 600;
     display:flex;
     flex-direction: row;
-    box-shadow: 0 7px #820000;
     border:none;
     color:white;
     text-align: center;
@@ -59,8 +58,12 @@
 }
 
 .submit-btn:hover{
-    background-color: #950000;
+    background-color: #bc101e;
     cursor: pointer;
+}
+
+.submit-btn:focus{
+    background-color: #830b15;
 }
 
 .success-msg{

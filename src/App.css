@@ -1,12 +1,11 @@
 @font-face {
-	font-family: inter;
-	src: url(Inter-VariableFont_slnt,wght.ttf);
-	font-weight: 100 1000;
-}
-@font-face {
 	font-family: oswald;
 	src: url(Oswald-VariableFont_wght.ttf);
 	font-weight: 100 1000;
+}
+@font-face {
+	font-family: kcpainted;
+	src: url(KCPaintedHand.otf);
 }
 ::-moz-selection {
 	/* Code for Firefox */
@@ -18,7 +17,7 @@
     background: #13c502; */
 }
 a {
-	color: white;
+	color: #fff5f0;
 	text-decoration: none;
 }
 h2 {
@@ -32,14 +31,14 @@ h4{
 	font-weight: 500;
 }
 a:hover {
-	color: #c80000;
+	color: #ec1426;
 }
 .App {
-	color: white;
+	color: #fff5f0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	font-family: oswald;
+	font-family: kcpainted, oswald, Arial, Helvetica, sans-serif;
 	margin-bottom: 30px;
 	justify-content: space-around;
 }
@@ -50,7 +49,7 @@ a:hover {
 	display:flex;
 	flex-direction: column;
 	align-self: flex-start;
-	width: 300px;
+	width: 350px;
 	margin:20px;
 }
 .site-body{
@@ -96,7 +95,7 @@ a:hover {
 	flex-wrap: wrap;
 	flex-grow: 1;
 	justify-content: space-evenly;
-	color: white;
+	color: #fff5f0;
 	margin-top:300px;
 }
 .socialIcon {
@@ -171,7 +170,7 @@ a:hover {
 }
 
 .btn{
-    background-color: #c80000;
+    background-color: #ec1426;
     width: 200px;
     padding:20px;
 	margin:35px 0 0 0;
@@ -187,7 +186,7 @@ a:hover {
 }
 
 .btn:hover{
-    color:white;
+    color:#fff5f0;
 	background-color: #950000;
     cursor: pointer;
 }
@@ -206,6 +205,10 @@ a:hover {
 	height: auto;
 	justify-self: flex-end;
 	border-radius: 5px;
+}
+
+.logo-img{
+	width:100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -241,7 +244,7 @@ a:hover {
 		width: 85vw;
 	}
 	.mobile-btn {
-		background-color: white;
+		background-color: #fff5f0;
 		color: black;
 		padding: 16px 25px;
 		border-radius: 5px;
@@ -249,18 +252,12 @@ a:hover {
 	}
 	.Header{
 		position: relative;
-		width:90%;
+		width:350px;
 		margin:auto;
 	}
 	.Socials{
-		width:60%;
-		margin:auto;
-		margin-top:250px;
-		margin-bottom: 50px;
-	}
-	.blurred-logo-img-loaded{
-		height:100%;
-		text-align: center;	
+		margin-bottom: 20px;
+		margin-top:280px;
 	}
 	.promo{
 		margin-bottom: 60px;
@@ -268,8 +265,14 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+	.Header{
+		position: relative;
+		width:300px;
+		margin:auto;
+	}
 	.Socials{
-		width:90%;
+		margin-bottom: 20px;
+		margin-top:280px;
 	}
 	/* .Info,
 	.title,

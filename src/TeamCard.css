@@ -3,7 +3,7 @@ p{
 }
 
 .TeamImg{
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     opacity:1;
     height:100%; 
     width: 100%; 
@@ -16,27 +16,14 @@ p{
     transition: opacity,filter 0.5s ease;
     -webkit-transition: opacity,filter 0.5s;
 }
-.TeamImg:hover{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    transition: opacity,filter 0.5s ease;
-    -webkit-transition: opacity,filter 0.5s;
-}
+
 .team-card-container{
     margin: 1vh 1vw;
-    border-radius: 4px;
-    padding:10px;
-    background-color: white;
+    border-radius: 5px;
+    background-color: #fff5f0;
 
     transition: border 0.5s ease;
     -webkit-transition: border 0.5s;
-}
-
-.TeamImg:hover {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    transition: filter 0.5s ease;
-    -webkit-transition: filter 0.5s;
 }
 
 .blurred-team-img{
@@ -47,6 +34,7 @@ p{
     justify-content: center;
     height:21vw;
     width:17vw;
+    border-radius: 5px;
 }
 
 .card-img-container{
@@ -61,31 +49,27 @@ p{
 .card-body{
     color:black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     padding:10px 0px;
-    font-family: oswald;
-    letter-spacing: 0.8px;
+    font-family: oswald, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding:10px;
 }
 
 .card-link{
-    font-family: oswald;
-    color:white;
-    margin-top: 10px;
-    /* text-transform: uppercase; */
-    background-color: #c80000;
-    box-shadow: 0 7px #820000;
-    padding:11px;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: 500;
+    color: #ec1426;
+    padding:0px 2px;
+    border-radius: 8px;
 
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s;
 }
 
 .card-link:hover{
-    color:white;
-    background-color: #950000;
+    color:#fff5f0;
+    background-color: #ec1426;
     cursor: pointer;
 }
 

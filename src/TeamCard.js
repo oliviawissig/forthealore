@@ -1,4 +1,6 @@
 import './TeamCard.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 const team_lazy_load_imgs = {
     shino: 'https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.10,w_0.10/icabnapkiqf2fpf31tp4.jpg',
@@ -16,7 +18,7 @@ function TeamCard({ href, memberName, memberImg, memberId,  className, width, he
     const team_lazy_load_url = team_lazy_load_imgs[memberId];
 
     return ( 
-        <a href={href} className="team-card-container">
+        <div className="team-card-container">
             <div className='card-img-container'>
                 <div className='blurred-team-img' style={{backgroundImage: 'url(' + team_lazy_load_url + ')'}}>
                     <img src={memberImg} className={className} alt={"profile avatar of " + memberName} width={width} height={height} loading="lazy"></img>
@@ -24,10 +26,9 @@ function TeamCard({ href, memberName, memberImg, memberId,  className, width, he
             </div>
             <div className="card-body">
                 <p style={{fontSize:'1.2rem'}}>{memberName}</p>
-                <a href={href} className="card-link">Instagram 
-                </a>
+                <a href={href} className="card-link"><FontAwesomeIcon size="2xl" icon={faInstagram} /></a>
             </div>
-        </a>
+        </div>
      );
 }
 

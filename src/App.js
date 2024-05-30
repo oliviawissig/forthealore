@@ -9,7 +9,7 @@ import {
 	faTiktok,
 	faSoundcloud,
 	faYoutube,
-	faDiscord,
+	faDiscord, faInstagramSquare
 } from "@fortawesome/free-brands-svg-icons";
 
 import { useEffect, useState } from "react";
@@ -32,10 +32,8 @@ function App() {
 				<div className="Header">
 					<div className={loaded ? "blurred-logo-img-loaded" : "blurred-logo-img"}>
 						<img
-							src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/zmrvt05zz1t4oiswipv1"
-							alt="alore logo"
-							width="296"
-							height="208"
+							src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/h3nxoxdhoxy7j4izmqzm"
+							alt="alore logo" className="logo-img"
 						/>
 					</div>
 					<h1 style={{display:"none"}}>welcome to the alore experience</h1>
@@ -95,13 +93,10 @@ function App() {
 
 					<h2>youtube channel:</h2>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive"  width="560" height="315" src="https://www.youtube.com/embed/dAJXbJsxmAk?si=8zsrVs96DqO5p0Kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/0rHWefkPujU?si=XyGWh8eNZbgazQI7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/MJLB5ICKuoo?si=xtodoJw9iM0_AJjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/G9B0FEnsSTQ?si=TJtBQ2g-KjsAKasf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/dAJXbJsxmAk?si=8zsrVs96DqO5p0Kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<h2>meet the team:</h2>
 					<div className="Team">
