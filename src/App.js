@@ -32,7 +32,7 @@ function App() {
 				<div className="Header">
 					<div className={loaded ? "blurred-logo-img-loaded" : "blurred-logo-img"}>
 						<img
-							src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/h3nxoxdhoxy7j4izmqzm"
+							src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/jvawjsjbig95fk5wdjvj"
 							alt="alore logo" className="logo-img"
 						/>
 					</div>
