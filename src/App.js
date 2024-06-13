@@ -9,7 +9,7 @@ import {
 	faTiktok,
 	faSoundcloud,
 	faYoutube,
-	faDiscord, faInstagramSquare
+	faDiscord
 } from "@fortawesome/free-brands-svg-icons";
 
 import { useEffect, useState } from "react";
@@ -83,24 +83,21 @@ function App() {
 				<div className="site-body">
 					<h2>alore live:</h2>
 					<div className="promo">
-						<a href="https://www.eventbrite.com/e/no-wallflowers-tiger-friday-june-7th-tickets-902890508817?aff=oddtdtcreator">
+						<a href="https://www.eventbrite.com/e/alore-live-residents-only-tiger-friday-june-14th-tickets-924889378027?aff=oddtdtcreator" style={{width:"100%"}}>
 							<div className="blurred-promo-img">
-								<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/gcsxcvzrrelgarx4jcft" alt="alore LA promo flyer" width="1440" height="1800" className="promo-img"/>
+								<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/xircvd5kwdltkag1zxcw" alt="alore live promo flyer" width="1080" height="1346" className="promo-img"/>
 							</div>
 						</a>
 						<br></br><br></br>
-						<a href="https://www.eventbrite.com/e/no-wallflowers-tiger-friday-june-7th-tickets-902890508817?aff=oddtdtcreator" className="btn">Buy Tickets</a>
+						<a href="https://www.eventbrite.com/e/alore-live-residents-only-tiger-friday-june-14th-tickets-924889378027?aff=oddtdtcreator" className="btn">Buy Tickets</a>
 					</div>
 
 					<h2>youtube channel:</h2>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/O0HOTFyBcwA?si=_adaCa7wCNU6ngek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/_kJ4c-xcckw?si=B4Rs1MmCtjtpyujK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/ITEbZ-BIS8A?si=yJwcy8OXKvJW4Mql" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/6nRw7jN3eYg?si=l-LVntXJKihgDiCV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/RYLUxEJSonA?si=BoDOymeSXMXS-aYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<h2>meet the team:</h2>
 					<div className="Team">

@@ -24,6 +24,7 @@ h2 {
 	font-size: 2.2rem;
 	text-transform: uppercase;
 	font-weight: 500;
+	margin: 20px 0px;
 }
 h4{
 	font-size: 1.8rem;
@@ -54,6 +55,7 @@ a:hover {
 }
 .site-body{
 	width:65vw;
+	margin-top:40px;
 }
 .blurred-logo-img {
 	position: absolute;
@@ -203,7 +205,7 @@ a:hover {
 }
 
 .promo-img{
-	width:100%;
+	min-width: 100%;
 	height: auto;
 	justify-self: flex-end;
 	border-radius: 5px;
