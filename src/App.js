@@ -74,15 +74,11 @@ function App() {
 							<FontAwesomeIcon icon={faDiscord} size="sm" />
 						</a>
 					</div>
-					{/* <div className="promo">
-						<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/xnfmmfpgsqv6yrbk6lu5" alt="NOODZ promo" width="720" height="898" className="promo-img"/>
-						<a href="https://socialcluboftomorrow.com/" className="btn">Get Access</a>
-					</div> */}
 				</div>
 
 				<div className="site-body">
-					<h2>alore live:</h2>
-					<div className="promo">
+					{/* <h2>alore live:</h2>
+					 <div className="promo">
 						<a href="https://www.eventbrite.com/e/alore-live-residents-only-tiger-friday-june-14th-tickets-924889378027?aff=oddtdtcreator" style={{width:"100%"}}>
 							<div className="blurred-promo-img">
 								<img src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/xircvd5kwdltkag1zxcw" alt="alore live promo flyer" width="1080" height="1346" className="promo-img"/>
@@ -90,14 +86,14 @@ function App() {
 						</a>
 						<br></br><br></br>
 						<a href="https://www.eventbrite.com/e/alore-live-residents-only-tiger-friday-june-14th-tickets-924889378027?aff=oddtdtcreator" className="btn">Buy Tickets</a>
-					</div>
+					</div> */}
 
 					<h2>youtube channel:</h2>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/_kJ4c-xcckw?si=B4Rs1MmCtjtpyujK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/YlnSHqrcc5U?si=WFI8eCTMyP6cI9H2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<div className="iframe-container">
-						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/RYLUxEJSonA?si=BoDOymeSXMXS-aYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe className="iframe-responsive" width="560" height="315" src="https://www.youtube.com/embed/_kJ4c-xcckw?si=B4Rs1MmCtjtpyujK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 					<h2>meet the team:</h2>
 					<div className="Team">
