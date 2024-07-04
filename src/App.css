@@ -241,12 +241,6 @@ a:hover {
 	width:100%;
 }
 
-@media only screen and (max-width: 1200px) {
-	/* .Info {
-		width: 65vw;
-	} */
-}
-
 @media only screen and (max-width: 1024px) {
 	.site-body {
 		width: 90vw;
@@ -282,12 +276,13 @@ a:hover {
 	}
 	.Header{
 		position: relative;
-		width:350px;
+		width:300px;
 		margin:auto;
+		top:20px;
 	}
 	.Socials{
-		margin-bottom: 20px;
-		margin-top:280px;
+		margin-top:250px;
+		margin-bottom:75px;
 	}
 	.promo{
 		margin-bottom: 60px;
@@ -299,10 +294,11 @@ a:hover {
 		position: relative;
 		width:300px;
 		margin:auto;
+		top:0px;
 	}
 	.Socials{
-		margin-bottom: 20px;
-		margin-top:280px;
+		margin-top:250px;
+		margin-bottom:50px;
 	}
 	/* .Info,
 	.title,
