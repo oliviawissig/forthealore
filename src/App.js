@@ -90,7 +90,7 @@ function App() {
 				<div className="site-body">
 					<h2>alore live:</h2>
 					<div className="promo">
-						<a href="javascript:void(0)" style={{ width: "100%" }}>
+						<div style={{ width: "100%" }}>
 							<div className="blurred-promo-img">
 								<img
 									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ladies_iacufu"
@@ -100,12 +100,23 @@ function App() {
 									className="promo-img"
 								/>
 							</div>
-						</a>
+						</div>
+						{/* <a href="javascript:void(0)" style={{ width: "100%" }}>
+							<div className="blurred-promo-img">
+								<img
+									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ladies_iacufu"
+									alt="alore live promo flyer"
+									width="1080"
+									height="1346"
+									className="promo-img"
+								/>
+							</div>
+						</a> */}
 						<br></br>
 						<br></br>
-						<a href="javascript:void(0)" className="btn">
+						<div className="btn-disabled">
 							Free!
-						</a>
+						</div>
 						<br></br>
 						<br></br>
 					</div>
