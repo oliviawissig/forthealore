@@ -41,20 +41,20 @@ a:hover {
 	flex-wrap: wrap;
 	font-family: kcpainted, oswald, Arial, Helvetica, sans-serif;
 	margin-bottom: 30px;
-	justify-content: space-around;
+	justify-content: center;
 }
 .Header {
 	position: sticky;
-	top:20px;
 
 	display:flex;
 	flex-direction: column;
 	align-self: flex-start;
-	width: 350px;
-	margin:20px;
+	width: 300px;
+	margin-right:60px;
+	top:40px;
 }
 .site-body{
-	width:65vw;
+	width:45vw;
 	margin-top:40px;
 }
 .blurred-logo-img {
@@ -92,9 +92,9 @@ a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 1;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	color: #fff5f0;
-	margin-top:300px;
+	margin-top:260px;
 }
 .socialIcon {
 	font-size: 4vh;
