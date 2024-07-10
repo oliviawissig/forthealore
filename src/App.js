@@ -151,7 +151,7 @@ function App() {
 						<TeamCard
 							memberName="Shino Smoke"
 							memberId="shino"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/icabnapkiqf2fpf31tp4"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/icabnapkiqf2fpf31tp4.jpg"
 							href="https://www.instagram.com/shinosmoke/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="596"
@@ -160,7 +160,7 @@ function App() {
 						<TeamCard
 							memberName="Solace Denim"
 							memberId="solace"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/obcifi92l2zt7sdpx6ks"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/obcifi92l2zt7sdpx6ks"
 							href="https://www.instagram.com/solacedenim/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="720"
@@ -169,7 +169,7 @@ function App() {
 						<TeamCard
 							memberName="Miss Organic"
 							memberId="organic"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ygbgjynwb3lq9y3akrnp"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/ygbgjynwb3lq9y3akrnp"
 							href="https://www.instagram.com/ms.orgaanic/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="596"
@@ -178,7 +178,7 @@ function App() {
 						<TeamCard
 							memberName="Two-Seven"
 							memberId="twoseven"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/bywgph8iwszbi7zc1nvu"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/bywgph8iwszbi7zc1nvu"
 							href="https://www.instagram.com/x8v1er/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="614"
@@ -187,7 +187,7 @@ function App() {
 						<TeamCard
 							memberName="Shmunty"
 							memberId="shmunty"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/gzktarac5tocf6ldojuj"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/gzktarac5tocf6ldojuj"
 							href="https://www.instagram.com/shmunty/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="585"
@@ -196,7 +196,7 @@ function App() {
 						<TeamCard
 							memberName="J Cash"
 							memberId="jcash"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/vxjbrsiz8q2rictewbmq"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/vxjbrsiz8q2rictewbmq"
 							href="https://www.instagram.com/jcashbta/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="1312"
@@ -205,7 +205,7 @@ function App() {
 						<TeamCard
 							memberName="Jason"
 							memberId="jason"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/enacnnihra8x43jsnvpf"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/enacnnihra8x43jsnvpf"
 							href="https://www.instagram.com/jason__gtz/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="768"
@@ -214,7 +214,7 @@ function App() {
 						<TeamCard
 							memberName="Matthew"
 							memberId="matthew"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/x2l5mbefnimugmz2wufn"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/x2l5mbefnimugmz2wufn"
 							href="https://www.instagram.com/paduaudap/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="1290"
@@ -223,11 +223,11 @@ function App() {
 						<TeamCard
 							memberName="Donte"
 							memberId="donte"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/v8enht8m166fcn55e6ua"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/kmumutfqgiqlkfxwt20h"
 							href="https://www.instagram.com/wavydonte/"
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
-							width="1290"
-							height="2556"
+							width="538"
+							height="538"
 						/>
 					</div>
 					<h2>contact:</h2>
