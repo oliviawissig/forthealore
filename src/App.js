@@ -40,7 +40,7 @@ function App() {
 								: "blurred-logo-img"
 						}>
 						<img
-							src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/jvawjsjbig95fk5wdjvj"
+							src="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.20,w_0.20/jvawjsjbig95fk5wdjvj.png"
 							alt="alore logo"
 							className="logo-img"
 						/>
@@ -90,7 +90,7 @@ function App() {
 				<div className="site-body">
 					<h2>alore live:</h2>
 					<div className="promo">
-						<div style={{ width: "100%" }}>
+						<a href="https://restlessnites.com/events/alore12jul2024" style={{ width: "100%" }} target="_blank" rel="noreferrer">
 							<div className="blurred-promo-img">
 								<img
 									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ladies_iacufu"
@@ -100,7 +100,7 @@ function App() {
 									className="promo-img"
 								/>
 							</div>
-						</div>
+						</a>
 						{/* <a href="javascript:void(0)" style={{ width: "100%" }}>
 							<div className="blurred-promo-img">
 								<img
@@ -114,9 +114,9 @@ function App() {
 						</a> */}
 						<br></br>
 						<br></br>
-						<div className="btn-disabled">
+						<a href="https://restlessnites.com/events/alore12jul2024" target="_blank" className="btn-girly" rel="noreferrer">
 							Free!
-						</div>
+						</a>
 						<br></br>
 						<br></br>
 					</div>
