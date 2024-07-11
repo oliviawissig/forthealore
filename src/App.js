@@ -90,7 +90,11 @@ function App() {
 				<div className="site-body">
 					<h2>alore live:</h2>
 					<div className="promo">
-						<a href="https://restlessnites.com/events/alore12jul2024" style={{ width: "100%" }} target="_blank" rel="noreferrer">
+						<a
+							href="https://restlessnites.com/events/alore12jul2024"
+							style={{ width: "100%" }}
+							target="_blank"
+							rel="noreferrer">
 							<div className="blurred-promo-img">
 								<img
 									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ladies_iacufu"
@@ -114,7 +118,11 @@ function App() {
 						</a> */}
 						<br></br>
 						<br></br>
-						<a href="https://restlessnites.com/events/alore12jul2024" target="_blank" className="btn-girly" rel="noreferrer">
+						<a
+							href="https://restlessnites.com/events/alore12jul2024"
+							target="_blank"
+							className="btn-girly"
+							rel="noreferrer">
 							Free!
 						</a>
 						<br></br>
@@ -146,7 +154,7 @@ function App() {
 							referrerpolicy="strict-origin-when-cross-origin"
 							allowfullscreen></iframe>
 					</div>
-					<h2>meet the team:</h2>
+					<h2>team:</h2>
 					<div className="Team">
 						<TeamCard
 							memberName="Shino Smoke"
@@ -158,51 +166,6 @@ function App() {
 							height="737"
 						/>
 						<TeamCard
-							memberName="Solace Denim"
-							memberId="solace"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/obcifi92l2zt7sdpx6ks"
-							href="https://www.instagram.com/solacedenim/"
-							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
-							width="720"
-							height="1077"
-						/>
-						<TeamCard
-							memberName="Miss Organic"
-							memberId="organic"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/ygbgjynwb3lq9y3akrnp"
-							href="https://www.instagram.com/ms.orgaanic/"
-							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
-							width="596"
-							height="881"
-						/>
-						<TeamCard
-							memberName="Two-Seven"
-							memberId="twoseven"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/bywgph8iwszbi7zc1nvu"
-							href="https://www.instagram.com/x8v1er/"
-							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
-							width="614"
-							height="909"
-						/>
-						<TeamCard
-							memberName="Shmunty"
-							memberId="shmunty"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/gzktarac5tocf6ldojuj"
-							href="https://www.instagram.com/shmunty/"
-							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
-							width="585"
-							height="875"
-						/>
-						<TeamCard
-							memberName="J Cash"
-							memberId="jcash"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/vxjbrsiz8q2rictewbmq"
-							href="https://www.instagram.com/jcashbta/"
-							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
-							width="1312"
-							height="1968"
-						/>
-						<TeamCard
 							memberName="Jason"
 							memberId="jason"
 							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/enacnnihra8x43jsnvpf"
@@ -212,15 +175,6 @@ function App() {
 							height="614"
 						/>
 						<TeamCard
-							memberName="Matthew"
-							memberId="matthew"
-							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/x2l5mbefnimugmz2wufn"
-							href="https://www.instagram.com/paduaudap/"
-							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
-							width="1290"
-							height="2556"
-						/>
-						<TeamCard
 							memberName="Donte"
 							memberId="donte"
 							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/kmumutfqgiqlkfxwt20h"
@@ -228,6 +182,15 @@ function App() {
 							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
 							width="538"
 							height="538"
+						/>
+						<TeamCard
+							memberName="Matthew"
+							memberId="matthew"
+							memberImg="https://res.cloudinary.com/dyyurflew/image/upload/c_scale,h_0.75,w_0.75/x2l5mbefnimugmz2wufn"
+							href="https://www.instagram.com/paduaudap/"
+							className={loaded ? "TeamImg" : "TeamImg-unloaded"}
+							width="1290"
+							height="2556"
 						/>
 					</div>
 					<h2>contact:</h2>
