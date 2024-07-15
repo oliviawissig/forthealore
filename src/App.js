@@ -88,7 +88,7 @@ function App() {
 				</div>
 
 				<div className="site-body">
-					{/* <h2>alore live:</h2>
+					<h2>alore live:</h2>
 					<div className="promo">
 						<a
 							href="https://restlessnites.com/events/alore12jul2024"
@@ -97,40 +97,24 @@ function App() {
 							rel="noreferrer">
 							<div className="blurred-promo-img">
 								<img
-									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ladies_iacufu"
+									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/suaavsevwzala5yczcl9"
 									alt="alore live promo flyer"
-									width="1080"
-									height="1346"
+									width="1440"
+									height="1796"
 									className="promo-img"
 								/>
 							</div>
 						</a>
-						<a href="javascript:void(0)" style={{ width: "100%" }}>
-							<div className="blurred-promo-img">
-								<img
-									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ladies_iacufu"
-									alt="alore live promo flyer"
-									width="1080"
-									height="1346"
-									className="promo-img"
-								/>
-							</div>
-						</a> 
-						<br></br>
-						<br></br>
 						<a
-							href="https://restlessnites.com/events/alore12jul2024"
+							href="https://www.eventbrite.com/e/jazmine-nikitta-tiger-thursday-july-18th-tickets-945744135167?aff=oddtdtcreator"
 							target="_blank"
-							className="btn-girly"
-							rel="noreferrer">
-							Free!
+							className="btn"
+							rel="noreferrer" style={{margin: "50px 0px"}}>
+							Buy Tickets
 						</a>
-						<br></br>
-						<br></br>
-					</div> */}
+					</div>
 
 					<h2>youtube channel:</h2>
-
 					<div className="iframe-container">
 						<iframe
 							className="iframe-responsive"
@@ -167,7 +151,8 @@ function App() {
 							referrerpolicy="strict-origin-when-cross-origin"
 							allowfullscreen></iframe>
 					</div>
-					<h2>team:</h2>
+
+					<h2 style={{marginTop: "80px"}}>team:</h2>
 					<div className="Team">
 						<TeamCard
 							memberName="Shino Smoke"
