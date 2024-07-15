@@ -88,7 +88,7 @@ function App() {
 				</div>
 
 				<div className="site-body">
-					<h2>alore live:</h2>
+					{/* <h2>alore live:</h2>
 					<div className="promo">
 						<a
 							href="https://restlessnites.com/events/alore12jul2024"
@@ -105,7 +105,7 @@ function App() {
 								/>
 							</div>
 						</a>
-						{/* <a href="javascript:void(0)" style={{ width: "100%" }}>
+						<a href="javascript:void(0)" style={{ width: "100%" }}>
 							<div className="blurred-promo-img">
 								<img
 									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/ladies_iacufu"
@@ -115,7 +115,7 @@ function App() {
 									className="promo-img"
 								/>
 							</div>
-						</a> */}
+						</a> 
 						<br></br>
 						<br></br>
 						<a
@@ -127,9 +127,22 @@ function App() {
 						</a>
 						<br></br>
 						<br></br>
-					</div>
+					</div> */}
 
 					<h2>youtube channel:</h2>
+
+					<div className="iframe-container">
+						<iframe
+							className="iframe-responsive"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/gx7mUbA_Xqo?si=odtT1BBRxdZMhF91"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen></iframe>
+					</div>
 					<div className="iframe-container">
 						<iframe
 							className="iframe-responsive"
