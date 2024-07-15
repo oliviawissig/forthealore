@@ -91,7 +91,7 @@ function App() {
 					<h2>alore live:</h2>
 					<div className="promo">
 						<a
-							href="https://restlessnites.com/events/alore12jul2024"
+							href="https://www.eventbrite.com/e/jazmine-nikitta-tiger-thursday-july-18th-tickets-945744135167?aff=oddtdtcreator"
 							style={{ width: "100%" }}
 							target="_blank"
 							rel="noreferrer">
