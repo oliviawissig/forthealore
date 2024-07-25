@@ -88,7 +88,7 @@ function App() {
 				</div>
 
 				<div className="site-body">
-					<h2>alore live:</h2>
+					{/* <h2>alore live:</h2>
 					<div className="promo">
 						<a
 							href="https://www.eventbrite.com/e/jazmine-nikitta-tiger-thursday-july-18th-tickets-945744135167?aff=oddtdtcreator"
@@ -112,9 +112,21 @@ function App() {
 							rel="noreferrer" style={{margin: "50px 0px"}}>
 							Buy Tickets
 						</a>
-					</div>
+					</div> */}
 
 					<h2>youtube channel:</h2>
+					<div className="iframe-container">
+						<iframe
+							className="iframe-responsive"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/-u8KaT_61KM?si=uXG2bRaCC42fSkQs"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen></iframe>
+					</div>
 					<div className="iframe-container">
 						<iframe
 							className="iframe-responsive"
@@ -127,32 +139,8 @@ function App() {
 							referrerpolicy="strict-origin-when-cross-origin"
 							allowfullscreen></iframe>
 					</div>
-					<div className="iframe-container">
-						<iframe
-							className="iframe-responsive"
-							width="560"
-							height="315"
-							src="https://www.youtube.com/embed/iDlfKZfOZtw?si=oUE5EPI5uV0xSIiR"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin"
-							allowfullscreen></iframe>
-					</div>
-					<div className="iframe-container">
-						<iframe
-							className="iframe-responsive"
-							width="560"
-							height="315"
-							src="https://www.youtube.com/embed/PcIs8_nxgjI?si=Uf0B9ypb7M2B7I-2"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin"
-							allowfullscreen></iframe>
-					</div>
 
-					<h2 style={{marginTop: "80px"}}>team:</h2>
+					<h2 style={{ marginTop: "80px" }}>team:</h2>
 					<div className="Team">
 						<TeamCard
 							memberName="Shino Smoke"
