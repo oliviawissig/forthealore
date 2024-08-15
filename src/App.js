@@ -88,16 +88,16 @@ function App() {
 				</div>
 
 				<div className="site-body">
-					{/* <h2>alore live:</h2>
+					<h2>alore live:</h2>
 					<div className="promo">
 						<a
-							href="https://www.eventbrite.com/e/jazmine-nikitta-tiger-thursday-july-18th-tickets-945744135167?aff=oddtdtcreator"
+							href="https://restlessnites.com/events/alore1sep2024"
 							style={{ width: "100%" }}
 							target="_blank"
 							rel="noreferrer">
 							<div className="blurred-promo-img">
 								<img
-									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/suaavsevwzala5yczcl9"
+									src="https://res.cloudinary.com/dyyurflew/image/upload/f_auto,q_auto/imothmtlmy6q1gdc2vgk"
 									alt="alore live promo flyer"
 									width="1440"
 									height="1796"
@@ -106,13 +106,14 @@ function App() {
 							</div>
 						</a>
 						<a
-							href="https://www.eventbrite.com/e/jazmine-nikitta-tiger-thursday-july-18th-tickets-945744135167?aff=oddtdtcreator"
+							href="https://restlessnites.com/events/alore1sep2024"
 							target="_blank"
 							className="btn"
-							rel="noreferrer" style={{margin: "50px 0px"}}>
+							rel="noreferrer"
+							style={{ margin: "50px 0px" }}>
 							Buy Tickets
 						</a>
-					</div> */}
+					</div>
 
 					<h2>youtube channel:</h2>
 					<div className="iframe-container">
@@ -120,7 +121,7 @@ function App() {
 							className="iframe-responsive"
 							width="560"
 							height="315"
-							src="https://www.youtube.com/embed/-u8KaT_61KM?si=uXG2bRaCC42fSkQs"
+							src="https://www.youtube.com/embed/1e23t-a-PBs?si=BEse5W6pFRBD_mli"
 							title="YouTube video player"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -132,7 +133,19 @@ function App() {
 							className="iframe-responsive"
 							width="560"
 							height="315"
-							src="https://www.youtube.com/embed/gx7mUbA_Xqo?si=odtT1BBRxdZMhF91"
+							src="https://www.youtube.com/embed/m-HQwwRcIlo?si=VR24uWyeXM7s-taE"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen></iframe>
+					</div>
+					<div className="iframe-container">
+						<iframe
+							className="iframe-responsive"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/xFRSjUtOj9c?si=4yicGDvzd1Gj_gr2"
 							title="YouTube video player"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
