@@ -35,7 +35,7 @@ export default function ContactSection() {
 
 	useEffect(() => {
 		foo();
-	}, []);
+	}, [recaptchaRef]);
 
 	const validateRecaptcha = async () => {
 		try {
