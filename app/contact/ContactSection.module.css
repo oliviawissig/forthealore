@@ -1,0 +1,21 @@
+.contact {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	font-family: KC;
+	padding-top: 10vh;
+}
+
+.contactForm {
+	margin-top: 3vh;
+	width: 50rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+	.contactForm {
+		width: 20rem;
+	}
+}

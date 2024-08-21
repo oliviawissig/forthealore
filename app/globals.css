@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: 0, 0, 0;
+  --text-color: black;
+  --brand-color-red: #EC1326;
+}
+
+@font-face {
+  font-family: KC;
+  src: url('/KCPaintedHand.otf');
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: 255, 255, 255;
+    --text-color: white;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border: 1px solid black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #140f14;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+#main, #events, #team{
+  font-family: "KC";
+}
+
+#main{
+  background-image: url('/alorecrowd.jpg');
+  background-size: cover;
+}
+
+#events{
+
+}
+
+#team{
+  background-image: url('/alore-team.jpg');
+  background-size: cover;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #team{
+    background-image: url('/backdropb&w.jpg');
+    background-size: cover;
+  }
+}

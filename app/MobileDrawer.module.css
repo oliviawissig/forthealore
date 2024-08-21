@@ -1,0 +1,21 @@
+.content {
+	background-color: #140f14 !important;
+	color: white;
+	font-family: KC;
+}
+
+.header {
+	background-color: #140f14 !important;
+}
+
+.close {
+	color: white;
+}
+
+.body {
+	margin-bottom: 16px;
+}
+
+.section {
+	align-self: flex-start;
+}

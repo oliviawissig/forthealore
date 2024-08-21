@@ -1,33 +1,36 @@
-# [ALORE]
-[forthealore.com](https://forthealore.com/)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### Overview
-A landing page for all things ALORE. This originally sarted as a personal projects for my friends' side business, and led to the team using my site and domain. The website spotlights new events, releases, merchandise (coming soon...), and ALORE team members. 
+## Getting Started
 
-A major attribute I focused on while creating this site was the loading animations and transitions. I am more streamlined when it comes to my project structure and components, which allowed me to implement loading animations and hover effects much easier. The next iteration of the site will receive a much needed face lift, as well as functional improvements overall. A future goal is to include a shop page for merchandise and event tickets. 
+First, run the development server:
 
-<span align="center">
-  <img src="https://i.imgur.com/yVC41Qa.png" alt="" width="630"/>
-  <img src="https://i.imgur.com/J3XPxr0.png" alt="" width="170"/>
-</span>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Built With
-React, CSS, JavaScript
-<!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Features
-- Built from scratch with `create-react-app`
-- I ❤️ Flexbox 
-- Uses React hooks and `useEffect()` to handle loading and hover animations
-- Supports multiple environments with a fully responsive design. Proper formatting should be exepcted with mobile, desktop, and tablet devices.
-- Hosted with Squarespace and Github Pages. 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-<!-- TODO: List what specific 'user problems' that this application solves. -->
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-<!-- ## Contact -->
+## Learn More
 
-<!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
+To learn more about Next.js, take a look at the following resources:
 
-<!-- ## Acknowledgements -->
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-<!-- TODO: List any blog posts, tutorials or plugins that you may have used to complete the project. Only list those that had a significant impact. Obviously, we all 'Google' stuff while working on our things, but maybe something in particular stood out as a 'major contributor' to your skill set for this project. -->
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
