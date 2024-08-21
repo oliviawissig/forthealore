@@ -10,16 +10,32 @@ import {
 import classes from "./ContactSection.module.css";
 import { useForm } from "@mantine/form";
 import { IconBubble, IconMail, IconSignature } from "@tabler/icons-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
-	const recaptchaRef = useRef();
+	const recaptchaRef = useRef<ReCAPTCHA>(null);
 	const [error, setError] = useState(false);
 	const [errorMsg, setErrorMsg] = useState("");
 	const [token, setToken] = useState("");
 	const [submitted, setSubmitted] = useState(false);
+
+	const foo = async () => {
+		if (recaptchaRef.current !== null) {
+			const recaptchaValue = recaptchaRef.current.getValue(); // <- `getValue()` from the instantiated refCaptcha
+			if (recaptchaValue) {
+				setToken(recaptchaValue);
+				await validateRecaptcha();
+			} else {
+				setError(true);
+			}
+		}
+	};
+
+	useEffect(() => {
+		foo();
+	}, []);
 
 	const validateRecaptcha = async () => {
 		try {
@@ -69,22 +85,16 @@ export default function ContactSection() {
 		email: string;
 		message: string;
 	}) => {
-		const recaptchaValue = recaptchaRef.current.getValue(); // <- `getValue()` from the instantiated refCaptcha
-		setToken(recaptchaValue);
-
-		await validateRecaptcha();
-
-		if (error || !recaptchaValue) {
+		if (error) {
 			setErrorMsg("Invalid Captcha, try again");
 		} else {
 			const params = {
 				...values,
-				"g-recaptcha-response": recaptchaValue,
+				"g-recaptcha-response": token,
 			};
 
-			console.log("RECAPTCHA VALUE: ", recaptchaValue);
-			console.log("PARAMS: ", params);
 			if (error) {
+				setErrorMsg("Invalid Captcha, try again");
 				console.log("OH NO! ", error);
 			} else {
 				emailjs
