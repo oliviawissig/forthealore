@@ -1,8 +1,6 @@
 import {
 	Drawer,
-	DrawerFactory,
 	NavLink,
-	PartialVarsResolver,
 } from "@mantine/core";
 import {
 	IconHome2,

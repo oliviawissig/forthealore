@@ -1,8 +1,7 @@
 "use client";
-import { Button, Center, Flex, Overlay, Skeleton, Text } from "@mantine/core";
+import { Button, Center, Flex, Overlay, Text } from "@mantine/core";
 import "./globals.css";
 import { useEffect, useState } from "react";
-import { TeamMember } from "./api/team/route";
 import { Element, scroller } from "react-scroll";
 import { IconArrowRight } from "@tabler/icons-react";
 import EventsSection from "./events/EventsSection";
@@ -12,8 +11,6 @@ import { Video } from "./api/videos/route";
 import { useViewportSize } from "@mantine/hooks";
 
 export default function Home() {
-	const [team, setTeam] = useState<TeamMember[]>([]);
-	const [teamLoading, setTeamLoading] = useState(true);
 	const [events, setEvents] = useState<Event[]>([]);
 	const [eventsLoading, setEventsLoading] = useState(true);
 	const [ids, setIds] = useState<Video[]>([]);
@@ -51,20 +48,7 @@ export default function Home() {
 		}
 	};
 
-	const foo = async () => {
-		const response = await fetch(
-			`${process.env.NEXT_PUBLIC_API_URL}/api/team`
-		);
-
-		if (response.ok) {
-			const teamTeam = await response.json();
-			setTeam(teamTeam);
-			setTeamLoading(false);
-		}
-	};
-
 	useEffect(() => {
-		foo();
 		foo3();
 	}, []);
 
