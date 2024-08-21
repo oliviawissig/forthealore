@@ -31,7 +31,7 @@ export async function GET(request: NextRequest) {
 		});
 	});
 
-	ids.sort((a, b) => b.timestamp - a.timestamp);
+	ids.sort((a, b) => new Date(b.timestamp).valueOf() - new Date(a.timestamp).valueOf());
 
 	const idJson = JSON.parse(JSON.stringify(ids));
 	return NextResponse.json(idJson);

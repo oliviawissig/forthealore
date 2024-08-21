@@ -32,7 +32,7 @@ export async function GET(request: NextRequest) {
 		});
 	});
 
-	events.sort((a, b) => b.date - a.date);
+	events.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 
 	let tempEvents: Event[] = [];
 	let tempEvents2: Event[] = [];
@@ -41,7 +41,7 @@ export async function GET(request: NextRequest) {
 		else tempEvents2.push(e);
 	});
 
-	tempEvents.sort((a, b) => a.date - b.date);
+	tempEvents.sort((a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf());
 	const eventsFinal: Event[] = tempEvents.concat(tempEvents2);
 
 	return NextResponse.json(eventsFinal);
