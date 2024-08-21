@@ -87,6 +87,7 @@ export default function CardCarousel({ events, loading }: CardCarouselProps) {
 	const slides = events.map((item) => (
 		<Carousel.Slide key={item.name}>
 			<Card
+				loading={loading}
 				date={item.date}
 				flyer={item.flyer}
 				ticket_link={item.ticket_link}
@@ -102,7 +103,7 @@ export default function CardCarousel({ events, loading }: CardCarouselProps) {
 			slideSize={{ base: "100%", sm: "33.333%" }}
 			slideGap={{ base: "xl", sm: 22 }}
 			align="start"
-			slidesToScroll={{ base: 1, md: 2 }}
+			slidesToScroll="auto"
 			className="w-10/12 z-[999]"
 			classNames={classes}
 			nextControlIcon={
