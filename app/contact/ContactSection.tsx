@@ -21,22 +21,6 @@ export default function ContactSection() {
 	const [token, setToken] = useState("");
 	const [submitted, setSubmitted] = useState(false);
 
-	const foo = async () => {
-		if (recaptchaRef.current !== null) {
-			const recaptchaValue = recaptchaRef.current.getValue(); // <- `getValue()` from the instantiated refCaptcha
-			if (recaptchaValue) {
-				setToken(recaptchaValue);
-				await validateRecaptcha();
-			} else {
-				setError(true);
-			}
-		}
-	};
-
-	useEffect(() => {
-		foo();
-	}, [recaptchaRef]);
-
 	const validateRecaptcha = async () => {
 		try {
 			if (token) {
@@ -85,14 +69,27 @@ export default function ContactSection() {
 		email: string;
 		message: string;
 	}) => {
+		if (recaptchaRef.current !== null) {
+			const recaptchaValue = recaptchaRef.current.getValue(); // <- `getValue()` from the instantiated refCaptcha
+			console.log("RECAPTCHA VALUE", recaptchaValue);
+			setToken(recaptchaValue!);
+			await validateRecaptcha();
+		} else {
+			setError(true);
+		}
+		console.log("TOKEN ", token);
+		console.log("VALUES", values);
+
+		const params = {
+			...values,
+			"g-recaptcha-response": token,
+		};
+
+		console.log(params);
+
 		if (error) {
 			setErrorMsg("Invalid Captcha, try again");
 		} else {
-			const params = {
-				...values,
-				"g-recaptcha-response": token,
-			};
-
 			if (error) {
 				setErrorMsg("Invalid Captcha, try again");
 				console.log("OH NO! ", error);
@@ -107,13 +104,18 @@ export default function ContactSection() {
 					.then(
 						() => {
 							console.log("Success!! ", values);
+							console.log("EMAIL SENT!");
+							setSubmitted(true);
 						},
 						(error: { text: any }) => {
 							console.log("EMAILJS ERROR", error.text);
+							setError(true);
+							setErrorMsg(
+								"Error sending message! Try again later."
+							);
+							return;
 						}
 					);
-				console.log("EMAIL SENT!");
-				setSubmitted(true);
 			}
 		}
 	};
@@ -140,7 +142,7 @@ export default function ContactSection() {
 					</Text>
 					<form
 						className={classes.contactForm}
-						onSubmit={form.onSubmit((values) => {
+						onSubmit={form.onSubmit(async (values) => {
 							handleSubmit(values);
 						})}>
 						<TextInput
