@@ -71,7 +71,6 @@ export default function ContactSection() {
 	}) => {
 		if (recaptchaRef.current !== null) {
 			const recaptchaValue = recaptchaRef.current.getValue(); // <- `getValue()` from the instantiated refCaptcha
-			console.log("RECAPTCHA VALUE", recaptchaValue);
 			setToken(recaptchaValue!);
 			await validateRecaptcha();
 		} else {
@@ -143,7 +142,7 @@ export default function ContactSection() {
 					<form
 						className={classes.contactForm}
 						onSubmit={form.onSubmit(async (values) => {
-							handleSubmit(values);
+							await handleSubmit(values);
 						})}>
 						<TextInput
 							leftSection={<IconSignature color="black" />}
