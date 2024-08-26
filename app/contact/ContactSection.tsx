@@ -10,39 +10,16 @@ import {
 import classes from "./ContactSection.module.css";
 import { useForm } from "@mantine/form";
 import { IconBubble, IconMail, IconSignature } from "@tabler/icons-react";
-import { useEffect, useRef, useState } from "react";
+import { MutableRefObject, useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
-	const recaptchaRef = useRef<ReCAPTCHA>(null);
+	const recaptchaRef = useRef() as MutableRefObject<ReCAPTCHA>;
 	const [error, setError] = useState(false);
 	const [errorMsg, setErrorMsg] = useState("");
-	const [token, setToken] = useState("");
 	const [submitted, setSubmitted] = useState(false);
-
-	const validateRecaptcha = async () => {
-		try {
-			if (token) {
-				await fetch(
-					`${process.env.NEXT_PUBLIC_API_URL}/api/verify-captcha`,
-					{
-						method: "POST",
-						headers: {
-							Accept: "application/json",
-							"Content-Type": "application/json",
-						},
-						body: JSON.stringify({ token: token }),
-					}
-				);
-				setError(false);
-			} else {
-				setError(true);
-			}
-		} catch (e) {
-			setError(true);
-		}
-	};
+	const [btnLoading, setBtnLoading] = useState(false);
 
 	const form = useForm({
 		mode: "uncontrolled",
@@ -64,35 +41,23 @@ export default function ContactSection() {
 		},
 	});
 
-	const handleSubmit = async (values: {
+	const handleSubmit = (values: {
 		name: string;
 		email: string;
 		message: string;
 	}) => {
-		if (recaptchaRef.current !== null) {
-			const recaptchaValue = recaptchaRef.current.getValue(); // <- `getValue()` from the instantiated refCaptcha
-			setToken(recaptchaValue!);
-			await validateRecaptcha();
-		} else {
-			setError(true);
-		}
-		console.log("TOKEN ", token);
-		console.log("VALUES", values);
+		const recaptchaValue = recaptchaRef.current.getValue();
 
 		const params = {
 			...values,
-			"g-recaptcha-response": token,
+			"g-recaptcha-response": recaptchaValue,
 		};
-
-		console.log(params);
 
 		if (error) {
 			setErrorMsg("Invalid Captcha, try again");
 		} else {
 			if (error) {
 				setErrorMsg("Invalid Captcha, try again");
-				console.log("OH NO! ", error);
-			} else {
 				emailjs
 					.send(
 						`${process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID}`,
@@ -102,16 +67,12 @@ export default function ContactSection() {
 					)
 					.then(
 						() => {
-							console.log("Success!! ", values);
-							console.log("EMAIL SENT!");
 							setSubmitted(true);
 						},
 						(error: { text: any }) => {
-							console.log("EMAILJS ERROR", error.text);
+							setBtnLoading(false);
 							setError(true);
-							setErrorMsg(
-								"Error sending message! Try again later."
-							);
+							setErrorMsg(`Error sending message! ${error.text}`);
 							return;
 						}
 					);
@@ -141,8 +102,9 @@ export default function ContactSection() {
 					</Text>
 					<form
 						className={classes.contactForm}
-						onSubmit={form.onSubmit(async (values) => {
-							await handleSubmit(values);
+						onSubmit={form.onSubmit((values) => {
+							setBtnLoading(true);
+							handleSubmit(values);
 						})}>
 						<TextInput
 							leftSection={<IconSignature color="black" />}
@@ -195,6 +157,7 @@ export default function ContactSection() {
 							/>
 							{error && <Text c="red">{errorMsg}</Text>}
 							<Button
+								loading={btnLoading}
 								size="lg"
 								type="submit"
 								color="var(--brand-color-red)">

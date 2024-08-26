@@ -11,7 +11,6 @@ export async function POST(request: NextRequest) {
 
 	const body = await request.json();
 	const token = body.token;
-    console.log("TOKEN ", token);
 
 	if (!token) {
 		return new Response(JSON.stringify({ message: "Token not found" }), {
@@ -19,29 +18,17 @@ export async function POST(request: NextRequest) {
 		});
 	}
 
-	try {
-		const res = await axios.post(
-			`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`
-		);
+	const res = await axios.post(
+		`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`
+	);
 
-		if (res.data.success) {
-			return new Response(JSON.stringify({ message: "Success" }), {
-				status: 200,
-			});
-		} else {
-			return new Response(
-				JSON.stringify({ message: "Failed to verify" }),
-				{
-					status: 405,
-				}
-			);
-		}
-	} catch (error) {
-		return new Response(
-			JSON.stringify({ message: "Internal Server Error" }),
-			{
-				status: 500,
-			}
-		);
+	if (res.data.success) {
+		return new Response(JSON.stringify({ message: "Success" }), {
+			status: 200,
+		});
+	} else {
+		return new Response(JSON.stringify({ message: "Failed to verify" }), {
+			status: 405,
+		});
 	}
 }
